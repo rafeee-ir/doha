@@ -113,3 +113,7 @@ Route::name('dashboard')->prefix('dashboard')->middleware('auth')->group(functio
 //    Route::delete('users/{user}', [UserController::class, 'destroy'])->name('users.destroy');
 
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
