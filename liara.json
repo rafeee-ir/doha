@@ -1,0 +1,12 @@
+{
+    "app" :"exp",
+    "laravel": {
+        "phpVersion": "8.2"
+    },
+    "disks": [
+        {
+            "name": "mydisk",
+            "mountTo": "storage"
+        }
+    ]
+}
