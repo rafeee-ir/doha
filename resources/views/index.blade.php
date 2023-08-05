@@ -20,7 +20,7 @@
 {{--                <div class="col p-md-4">--}}
 
                     @forelse($posts as $post)
-                        <div class="card h-100 border-0 ">
+                        <div class="card border-0 p-5">
 
                             <div class="hvr-shrink">
                                 <a href="{{url('blog',$post->slug)}}">
