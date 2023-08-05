@@ -1,6 +1,6 @@
-@extends('layouts.dapp')
+@extends('layouts.app')
 @section('title','Posts')
-@section('dashboard-title','Posts')
+{{--@section('dashboard-title','Posts')--}}
 
 @section('content')
 

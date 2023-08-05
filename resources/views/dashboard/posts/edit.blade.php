@@ -1,4 +1,4 @@
-@extends('layouts.dapp')
+@extends('layouts.app')
 @section('title','Edit '. $post->title)
 @section('dashboard-title','Edit')
 

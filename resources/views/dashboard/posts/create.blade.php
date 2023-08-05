@@ -1,6 +1,4 @@
-@extends('layouts.dapp')
-@section('title','Add new blog post')
-@section('dashboard-title','Add new blog post')
+@extends('layouts.app')
 
 @section('content')
 
@@ -65,22 +63,22 @@
     </div>
 
 @endsection
-@section('script')
-    <script src="{{url('assets/js/ckeditor.js')}}"></script>
-    <script>
-        ClassicEditor
-            .create( document.querySelector( '#editor' ) )
-            .catch( error => {
-                console.error( error );
-            } );
-    </script>
-    <script>
-        const checkboxHelper = checkbox => {
-            if(document.getElementById('published').value==1){
-                document.getElementById('published').value=0;
-            }else{
-                document.getElementById('published').value=1;
-            }
-        }
-    </script>
-@endsection
+{{--@section('script')--}}
+{{--    <script src="{{url('assets/js/ckeditor.js')}}"></script>--}}
+{{--    <script>--}}
+{{--        ClassicEditor--}}
+{{--            .create( document.querySelector( '#editor' ) )--}}
+{{--            .catch( error => {--}}
+{{--                console.error( error );--}}
+{{--            } );--}}
+{{--    </script>--}}
+{{--    <script>--}}
+{{--        const checkboxHelper = checkbox => {--}}
+{{--            if(document.getElementById('published').value==1){--}}
+{{--                document.getElementById('published').value=0;--}}
+{{--            }else{--}}
+{{--                document.getElementById('published').value=1;--}}
+{{--            }--}}
+{{--        }--}}
+{{--    </script>--}}
+{{--@endsection--}}

@@ -28,6 +28,16 @@ window.Popper = Popper
 import 'bootstrap'
 
 
+
+// window.animate = require('animate.css');
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel/dist/owl.carousel.min';
+// import $ from 'jquery'; // from node_modules
+// window.jQuery = $;
+// export default $;
+
+
+
 /**
  * Install Bootstrap 5 in Laravel 10 With Vite
  * We'll load the axios HTTP library which allows us to easily issue requests

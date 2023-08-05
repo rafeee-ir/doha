@@ -1,10 +1,10 @@
-@extends('layouts.dapp')
+@extends('layouts.app')
 @section('title','Add brand')
 @section('dashboard-title','Add brand')
 
 @section('content')
 
-
+<div class="container">
     <div class="row">
         <!-- data table start -->
         <div class="col-12 mt-5">
@@ -43,7 +43,7 @@
         </div>
         <!-- data table end -->
     </div>
-
+</div>
 @endsection
 @section('script')
     <script src="{{url('assets/js/ckeditor.js')}}"></script>

@@ -1,11 +1,11 @@
 {
-    "app" :"exp",
+    "app" :"qatarexpo",
     "laravel": {
         "phpVersion": "8.2"
     },
     "disks": [
         {
-            "name": "mydisk",
+            "name": "q-disk",
             "mountTo": "storage"
         }
     ]
