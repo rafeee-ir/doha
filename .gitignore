@@ -1,0 +1,13 @@
+
+vendor/league/glide/
+vendor/intervention/image/
+vendor/spatie/image-optimizer/
+vendor/nicmart/tree/
+vendor/spatie/browsershot/
+vendor/masterminds/html5/
+vendor/spatie/crawler/
+vendor/spatie/image/
+vendor/spatie/laravel-sitemap/
+vendor/spatie/robots-txt/
+vendor/spatie/temporary-directory/
+vendor/symfony/dom-crawler/
