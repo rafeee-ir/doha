@@ -1,13 +1,15 @@
 @extends('layouts.app')
-@section('title','Add brand')
-@section('dashboard-title','Add brand')
+@section('title','Add faq')
+{{--@section('dashboard-title','Add brand')--}}
 
 @section('content')
 
 <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
         <!-- data table start -->
-        <div class="col-12 mt-5">
+        <div class="col-md-8 mt-5">
+            <a class="btn btn-dark m-3" href="{{url('dashboard/faqs')}}">برگشت</a>
+
             <div class="card">
                 <div class="card-header bg-dark text-light h4">
                     Add FAQ

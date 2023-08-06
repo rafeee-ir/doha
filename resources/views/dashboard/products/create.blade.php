@@ -1,16 +1,18 @@
-@extends('layouts.dapp')
+@extends('layouts.app')
 @section('title','Add Product')
-@section('dashboard-title','Add Product')
+{{--@section('dashboard-title','Add Product')--}}
 
 @section('content')
+<div class="container">
 
-
-    <div class="row">
+    <div class="row justify-content-center">
         <!-- data table start -->
-        <div class="col-12 mt-5">
+        <div class="col-md-8 mt-5">
+            <a class="btn btn-dark m-3" href="{{url('dashboard/products')}}">برگشت</a>
+
             <div class="card">
                 <div class="card-header bg-dark text-light h4">
-                    Add new product
+                    محصول جدید
                 </div>
                 <div class="card-body">
             <div class="row">
@@ -117,10 +119,11 @@
         </div>
         <!-- data table end -->
     </div>
+    </div>
 
 @endsection
 @section('script')
-    <script src="{{url('assets/js/ckeditor.js')}}"></script>
+    <script src="{{url('js/ckeditor.js')}}"></script>
     <script>
         ClassicEditor
             .create( document.querySelector( '#editor' ) )
@@ -131,13 +134,13 @@
                 console.error( error );
             } );
     </script>
-    <script>
-        const checkboxHelper = checkbox => {
-            if(document.getElementById('published').value==1){
-                document.getElementById('published').value=0;
-            }else{
-                document.getElementById('published').value=1;
-            }
-        }
-    </script>
+{{--    <script>--}}
+{{--        const checkboxHelper = checkbox => {--}}
+{{--            if(document.getElementById('published').value==1){--}}
+{{--                document.getElementById('published').value=0;--}}
+{{--            }else{--}}
+{{--                document.getElementById('published').value=1;--}}
+{{--            }--}}
+{{--        }--}}
+{{--    </script>--}}
 @endsection

@@ -41,6 +41,10 @@ $permissions = [
             'user-create',
             'user-edit',
             'user-delete',
+            'contact-list',
+            'contact-create',
+            'contact-edit',
+            'contact-delete',
         ];
 
         foreach ($permissions as $permission) {

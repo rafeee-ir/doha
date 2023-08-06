@@ -5,8 +5,10 @@
 
 
     <div class="container">
-        <div class="row m-3">
-            <div class="col-12">
+        <div class="row m-3 justify-content-center">
+            <div class="col-md-8">
+                <a class="btn btn-dark m-3" href="{{url('dashboard/faqs/create')}}">FAQ جدید</a>
+
                 <div class="card">
                     <div class="card-body">
                         <div class="">

@@ -2,49 +2,52 @@
 @section('title','Brands')
 
 @section('content')
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="bread-inner">
-                        <ul class="bread-list">
-                            <li><a href="{{url('/')}}">Home<i class="ti-arrow-right"></i></a></li>
-                            <li class="active"><a href="">Brands</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Breadcrumbs -->
+
+
 
 <div class="container my-5">
     <div class="row">
-        @forelse($suppliers as $supplier)
-        <div class="col-md-6 mb-3">
-            <a href="{{url('/brands',$supplier->slug)}}">
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-5">
-                    <img src="@if(isset($supplier->logo)){{asset('storage/uploads/suppliers/'.$supplier->logo)}}@else https://via.placeholder.com/370x370 @endif" alt="{{$supplier->title}}">
-                </div>
-                <div class="col-md-7">
-                    <div class="card-body">
-                        <h5 class="card-title">{{$supplier->title}}</h5>
-                        <p class="card-text">{{strip_tags(Str::limit($supplier->about,100))}}</p>
-                        <p class="card-text"><small class="text-muted">Funded at {{ date('Y', strtotime($supplier->funded_at))}}</small></p>
+        <div class="col-lg-8">
+            <div class="row">
+                @forelse($suppliers as $supplier)
+                    <div class="col-md-3 mb-3">
+                        {{--                <div class="card mb-3" style="">--}}
+                        {{--                    <div class="row g-0">--}}
+                        {{--                        <div class="card-img-top">--}}
+                        <a href="{{url('/brands',$supplier->slug)}}">
+
+                            <img class="w-100" src="@if(isset($supplier->logo)){{asset('storage/uploads/suppliers/'.$supplier->logo)}}@else https://via.placeholder.com/370x370 @endif" alt="{{$supplier->title}}">
+                        </a>
+                        {{--                        </div>--}}
+                        {{--                        <div class="col-md-12">--}}
+                        {{--                            <div class="card-body">--}}
+                        {{--                                <a href="{{url('/brands',$supplier->slug)}}">--}}
+                        {{--            <a href="{{url('/brands',$supplier->slug)}}">--}}
+
+                        <h3 class="card-title text-decoration-none my-4 text-center">{{$supplier->title}}</h3>
+                        {{--            </a>--}}
+                        {{--                                </a>--}}
+                        {{--                                <p class="card-text">{{strip_tags(Str::limit($supplier->about,100))}}</p>--}}
+                        {{--                                <p class="card-text"><small class="text-muted">Funded at {{ date('Y', strtotime($supplier->funded_at))}}</small></p>--}}
+                        {{--                                <hr class="w-100">--}}
+                        {{--                                <a href="{{url('brands',$supplier->slug)}}" class="btn btn-dark">مشاهده</a>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
+                        {{--                    </div>--}}
+                        {{--                </div>--}}
+
                     </div>
-                </div>
+                @empty
+                    <div class="col-12">
+                        There is no supplier here
+                    </div>
+                @endforelse
             </div>
         </div>
-            </a>
+        <div class="col-lg-4">
+            <img src="{{url('images/more-about.png')}}" alt="">
+
         </div>
-        @empty
-            <div class="col-12">
-                There is no supplier here
-            </div>
-        @endforelse
     </div>
 </div>
 @endsection

@@ -1,13 +1,15 @@
-@extends('layouts.dapp')
+@extends('layouts.app')
 @section('title','Brands')
-@section('dashboard-title','Brands')
+{{--@section('dashboard-title','Brands')--}}
 
 @section('content')
 
-
-    <div class="row">
+<div class="container">
+    <div class="row justify-content-center">
         <!-- data table start -->
-        <div class="col-12 mt-5">
+        <div class="col-md-8 mt-5">
+            <a class="btn btn-dark m-3" href="{{url('dashboard/brands/create')}}">برند جدید</a>
+
             <div class="card">
                 <div class="card-body">
                     {{--                    <h4 class="header-title">{{$users_count}} users</h4>--}}
@@ -17,17 +19,17 @@
                         </div>
                     @endif
                     <div class="data-tables datatable-dark">
-                        <table id="dataTable" class="">
-                            <thead class="text-capitalize">
-                            <tr>
-                                <th>Title</th>
-                                <th>Slogan</th>
-                                <th>Added on</th>
-                                <th>Funded at</th>
-                                <th>Published</th>
-                                <th></th>
-                            </tr>
-                            </thead>
+                        <table id="dataTable" class="table table-striped">
+{{--                            <thead class="text-capitalize">--}}
+{{--                            <tr>--}}
+{{--                                <th>Title</th>--}}
+{{--                                <th>Slogan</th>--}}
+{{--                                <th>Added on</th>--}}
+{{--                                <th>Funded at</th>--}}
+{{--                                <th>Published</th>--}}
+{{--                                <th></th>--}}
+{{--                            </tr>--}}
+{{--                            </thead>--}}
                             <tbody>
                             @forelse($suppliers as $supplier)
                                 <tr>
@@ -60,6 +62,7 @@
             </div>
         </div>
         <!-- data table end -->
+    </div>
     </div>
 
 @endsection

@@ -2,23 +2,7 @@
 @section('title',$post->title)
 
 @section('content')
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="bread-inner">
-                        <ul class="bread-list">
-                            <li><a href="{{url('/')}}">Home<i class="ti-arrow-right"></i></a></li>
-                            <li><a href="{{route('blog.index')}}">Blog<i class="ti-arrow-right"></i></a></li>
-                            <li class="active"><a href="">{{$post->title}}</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Breadcrumbs -->
+
 
     <div class="container my-5">
 
@@ -26,6 +10,10 @@
             <div class="col-md-8">
                 <h1>{{$post->title}}</h1>
                 <hr class="w-25">
+
+                <a href="{{url('blog')}}" class="text-decoration-none badge bg-warning">اخبار</a>
+                <span class="badge bg-info">{{$post->diff}}</span>
+
 {{--                <p>{!! $post->content !!}</p>--}}
             </div>
             <div class="col-md-8 my-5">
@@ -34,7 +22,7 @@
             <div class="col-md-8">
 {{--                <h1>{{$post->title}}</h1>--}}
 {{--                <hr class="w-25">--}}
-                <p>{!! $post->content !!}</p>
+                {!! $post->content !!}
             </div>
 
         </div>

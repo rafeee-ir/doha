@@ -1,13 +1,15 @@
-@extends('layouts.dapp')
+@extends('layouts.app')
 @section('title','Products')
-@section('dashboard-title','Products')
+{{--@section('dashboard-title','Products')--}}
 
 @section('content')
+<div class="container">
 
-
-    <div class="row">
+    <div class="row justify-content-center">
         <!-- data table start -->
-        <div class="col-12 mt-5">
+        <div class="col-md-8 mt-5">
+            <a class="btn btn-dark m-3" href="{{url('dashboard/products/create')}}">محصول جدید</a>
+
             <div class="card">
                 <div class="card-body">
                     {{--                    <h4 class="header-title">{{$users_count}} users</h4>--}}
@@ -17,15 +19,15 @@
                         </div>
                     @endif
                     <div class="data-tables datatable-dark">
-                        <table id="dataTable" class="text-center">
-                            <thead class="text-capitalize">
-                            <tr>
-                                <th>ID</th>
-                                <th>Title</th>
-                                <th>Added on</th>
-                                <th>action</th>
-                            </tr>
-                            </thead>
+                        <table id="dataTable" class="text-center table table-striped">
+{{--                            <thead class="text-capitalize">--}}
+{{--                            <tr>--}}
+{{--                                <th>ID</th>--}}
+{{--                                <th>Title</th>--}}
+{{--                                <th>Added on</th>--}}
+{{--                                <th>action</th>--}}
+{{--                            </tr>--}}
+{{--                            </thead>--}}
                             <tbody>
                             @forelse($products as $product)
                                 <tr>
@@ -51,6 +53,7 @@
             </div>
         </div>
         <!-- data table end -->
+    </div>
     </div>
 
 @endsection

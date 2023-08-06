@@ -40,7 +40,7 @@
                 </div>
                 <!-- Sidebar -->
                 <div class="col-lg-4">
-                    <img src="images/more-about.png" alt="">
+                    <img src="{{url('images/more-about.png')}}" alt="">
                 </div>
             </div>
         </div>

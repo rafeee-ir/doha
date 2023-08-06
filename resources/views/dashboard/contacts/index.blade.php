@@ -1,39 +1,39 @@
-@extends('layouts.dapp')
+@extends('layouts.app')
 @section('title','Contacts')
-@section('dashboard-title','All Contacts')
+{{--@section('dashboard-title','All Contacts')--}}
 
 @section('content')
+<div class="container">
 
-
-    <div class="row">
+    <div class="row justify-content-center">
         <!-- data table start -->
-        <div class="col-12 mt-5">
-            <div class="card">
-                <div class="card-body">
+        <div class="col-md-12 mt-5">
+{{--            <div class="card">--}}
+{{--                <div class="card-body">--}}
                     {{--                    <h4 class="header-title">{{$users_count}} users</h4>--}}
                     @if (session('success'))
                         <div class="alert alert-success">
                             {{ session('success') }}
                         </div>
                     @endif
-                    <div class="data-tables datatable-dark">
-                        <table id="dataTable" class="text-center">
-                            <thead class="text-capitalize">
-                            <tr>
-                                <th>When</th>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Mobile</th>
-                                <th>Subject</th>
-                                <th>Message</th>
-                                <th>User</th>
-                                <th>Brand</th>
-                                <th>Product</th>
-                                <th>URL</th>
+                    <div class="container">
+                        <table id="dataTable" class="text-center table table-striped">
+{{--                            <thead class="text-capitalize">--}}
+{{--                            <tr>--}}
+{{--                                <th>When</th>--}}
+{{--                                <th>Name</th>--}}
+{{--                                <th>Email</th>--}}
+{{--                                <th>Mobile</th>--}}
+{{--                                <th>Subject</th>--}}
+{{--                                <th>Message</th>--}}
+{{--                                <th>User</th>--}}
+{{--                                <th>Brand</th>--}}
+{{--                                <th>Product</th>--}}
+{{--                                <th>URL</th>--}}
 
-                                <th>action</th>
-                            </tr>
-                            </thead>
+{{--                                <th>action</th>--}}
+{{--                            </tr>--}}
+{{--                            </thead>--}}
                             <tbody>
                             @forelse($contacts as $contact)
                                 <tr>
@@ -57,15 +57,15 @@
                                     </td>
                                 </tr>
                             @empty
-                                There is no Products!
+                                There is no Contacts!
                             @endforelse
                             </tbody>
                         </table>
-                    </div>
-                </div>
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
         </div>
         <!-- data table end -->
     </div>
-
+</div>
 @endsection

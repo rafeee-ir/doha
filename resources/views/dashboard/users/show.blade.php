@@ -1,6 +1,6 @@
-@extends('layouts.dapp')
+@extends('layouts.app')
 @section('title',$user->name . "'s Profile")
-@section('dashboard-title',$user->name . "'s Profile")
+{{--@section('dashboard-title',$user->name . "'s Profile")--}}
 
 @section('content')
 

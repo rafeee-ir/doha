@@ -2,33 +2,18 @@
 @section('title','Search ' . request()->s ?? '')
 
 @section('content')
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="bread-inner">
-                        <ul class="bread-list">
-                            <li><a href="{{url('/')}}">Home<i class="ti-arrow-right"></i></a></li>
-                            <li class="active"><a href="">Search {{request()->s ?? ''}}</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Breadcrumbs -->
+
 
     <div class="container my-5">
 
 
-        <div class="row">
+        <div class="row justify-content-center">
 
-            <div class="col-12">
-                <div class="alert my-5 alert-secondary alert-dismissible fade show" role="alert"><strong>{{$products->count()}}</strong> product(s) with "{{request()->s}}"
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+            <div class="col-md-8">
+                <div class="alert my-5 alert-secondary alert-dismissible fade show" role="alert"><strong>{{$products->count()}}</strong> محصول با "{{request()->s}}"
+{{--                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">--}}
+{{--                        <span aria-hidden="true">&times;</span>--}}
+{{--                    </button>--}}
                 </div>
             </div>
             @forelse($products as $product)
@@ -53,8 +38,8 @@
                     </a>
                 </div>
             @empty
-                <div class="col-12">
-                    Nothing found
+                <div class="col-md-8">
+                    چیزی یافت نشد
                 </div>
             @endforelse
         </div>

@@ -2,23 +2,7 @@
 @section('title', 'Category ' . $category->category ?? '')
 
 @section('content')
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="bread-inner">
-                        <ul class="bread-list">
-                            <li><a href="{{url('/')}}">Home<i class="ti-arrow-right"></i></a></li>
-                            <li><a href="{{url('/categories')}}">Categories<i class="ti-arrow-right"></i></a></li>
-                            <li class="active"><a href="">{{$category->category ?? ''}}</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Breadcrumbs -->
+
 
 
 
@@ -27,7 +11,7 @@
         <div class="container">
         <div class="row">
             <div class="col-12 mb-5">
-                <h2>{{$category->suppliers->count()}} Brand<small>s of {{$category->category}}</small></h2>
+                <h2>{{$category->suppliers->count()}} شرکت<small> در زمینه {{$category->category}}</small></h2>
             </div>
             <div class="col-12">
                 <div class="owl-carousel mb-3">
@@ -53,7 +37,7 @@
     <div class="container my-5">
         <div class="row">
             <div class="col-12 mb-5">
-                <h2>{{$category->products->count()}} Product<small>s in {{$category->category}}</small></h2>
+                <h2>{{$category->products->count()}} محصول <small> در زمینه {{$category->category}}</small></h2>
             </div>
             @forelse($category->products as $product)
                 <div class="col-lg-3 col-md-4  mb-3">

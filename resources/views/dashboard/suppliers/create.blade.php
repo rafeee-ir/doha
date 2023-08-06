@@ -1,16 +1,18 @@
-@extends('layouts.dapp')
+@extends('layouts.app')
 @section('title','Add brand')
-@section('dashboard-title','Add brand')
+{{--@section('dashboard-title','Add brand')--}}
 
 @section('content')
 
-
-    <div class="row">
+<div class="container">
+    <div class="row justify-content-center">
         <!-- data table start -->
-        <div class="col-12 mt-5">
+        <div class="col-md-8 mt-5">
+            <a class="btn btn-dark m-3" href="{{url('dashboard/brands')}}">برگشت</a>
+
             <div class="card">
                 <div class="card-header bg-dark text-light h4">
-                    Add brand
+                    برند جدید
                 </div>
                 <div class="card-body">
             <div class="row">
@@ -91,20 +93,20 @@
                                             @endif
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="published" class="col-form-label">Publish now?</label>
-                                            <div class="form-check">
-                                                <input onclick="checkboxHelper(this)"  class="form-check-input @if($errors->has('published')) border border-danger @endif" type="checkbox" value="1" name="published" id="published">
-                                                <label class="form-check-label" for="published">
-                                                    Publish
-                                                </label>
-                                                @if($errors->has('published'))
-                                                    <small class="text-danger">{{ $errors->first('published') }}</small>
-                                                @endif
-                                            </div>
-                                        </div>
-                                    </div>
+{{--                                    <div class="col-md-6">--}}
+{{--                                        <div class="form-group">--}}
+{{--                                            <label for="published" class="col-form-label">Publish now?</label>--}}
+{{--                                            <div class="form-check">--}}
+{{--                                                <input onclick="checkboxHelper(this)"  class="form-check-input @if($errors->has('published')) border border-danger @endif" type="checkbox" value="1" name="published" id="published">--}}
+{{--                                                <label class="form-check-label" for="published">--}}
+{{--                                                    Publish--}}
+{{--                                                </label>--}}
+{{--                                                @if($errors->has('published'))--}}
+{{--                                                    <small class="text-danger">{{ $errors->first('published') }}</small>--}}
+{{--                                                @endif--}}
+{{--                                            </div>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
                                 </div>
 
 
@@ -119,6 +121,7 @@
             </div>
         </div>
         <!-- data table end -->
+    </div>
     </div>
 
 @endsection

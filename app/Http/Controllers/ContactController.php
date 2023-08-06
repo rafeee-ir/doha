@@ -64,7 +64,7 @@ class ContactController extends Controller
      */
     public function store(StoreContactRequest $request)
     {
-        try {
+//        try {
             $request->validate([
                 'email' => 'required|email',
                 'message' => 'required|min:10'
@@ -76,9 +76,9 @@ class ContactController extends Controller
                 ->performedOn($contact)
                 ->log($contact->name . ' added a new contact request by ' . $contact->email);
             return redirect(url()->previous() . '#contact')->with('success', 'Contact form sent successfully');
-        }catch(\Exception $e){
-            return redirect(url()->previous() . '#contact')->with('error','Something goes wrong!');
-        }
+//        }catch(\Exception $e){
+//            return redirect(url()->previous() . '#contact')->with('error','Something goes wrong!');
+//        }
     }
 
     /**

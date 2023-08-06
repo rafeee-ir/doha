@@ -2,23 +2,23 @@
 @section('title', $supplier->title)
 
 @section('content')
-    <!-- Breadcrumbs -->
-    <div class="breadcrumbs">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="bread-inner">
-                        <ul class="bread-list">
-                            <li><a href="{{url('/')}}">Home<i class="ti-arrow-right"></i></a></li>
-                            <li><a href="{{url('/brands')}}">Brands<i class="ti-arrow-right"></i></a></li>
-                            <li class="active"><a href="">{{$supplier->title}}</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Breadcrumbs -->
+{{--    <!-- Breadcrumbs -->--}}
+{{--    <div class="breadcrumbs">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row">--}}
+{{--                <div class="col-12">--}}
+{{--                    <div class="bread-inner">--}}
+{{--                        <ul class="bread-list">--}}
+{{--                            <li><a href="{{url('/')}}">Home<i class="ti-arrow-right"></i></a></li>--}}
+{{--                            <li><a href="{{url('/brands')}}">Brands<i class="ti-arrow-right"></i></a></li>--}}
+{{--                            <li class="active"><a href="">{{$supplier->title}}</a></li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <!-- End Breadcrumbs -->--}}
 
 {{--    <div class="px-4 py-5 my-5 text-center">--}}
 {{--        <img class="d-block mx-auto mb-4" src="https://abystone.com/wp-content/uploads/2023/02/cropped-logo-noname.png" alt="" width="72">--}}

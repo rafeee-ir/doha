@@ -1,6 +1,6 @@
-@extends('layouts.dapp')
+@extends('layouts.app')
 @section('title','Create new user')
-@section('dashboard-title','Create new user')
+{{--@section('dashboard-title','Create new user')--}}
 
 @section('content')
 

@@ -12,6 +12,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{url('images/fav.png')}}">
+
 
     <!-- Scripts -->
     @vite(['resources/js/app.js'])
@@ -19,16 +21,18 @@
 </head>
 <body>
     <div id="app">
-<header class="container-fluid">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<header class="container-fluid" style="margin-bottom: 100px">
+{{--    <div class="container">--}}
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgba(248,250,252,0.8)">
             <div class="container-fluid">
-                <a class="navbar-brand" href="{{url('')}}">{{config('app.name')}}</a>
+                <a class="navbar-brand" href="{{url('')}}" title="{{config('app.name')}}">
+                    <img src="{{url('images/fav.png')}}" alt="" width="70">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarScroll">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll nav-tabs" style="--bs-scroll-height: 100px;">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll    " style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
                             <a class="nav-link {{Request::is('/') ? 'active' : ''}}" aria-current="page" href="{{url('/')}}">اکسپو</a>
                         </li>
@@ -36,7 +40,7 @@
                             <a class="nav-link {{Request::is('about') ? 'active' : ''}}" href="{{url('about')}}">درباره</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{Request::is('blog') ? 'active' : ''}}" href="{{url('blog')}}">اخبار</a>
+                            <a class="nav-link {{Request::is('blog*') ? 'active' : ''}}" href="{{url('blog')}}">اخبار</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -86,32 +90,62 @@
                                     </li>
                                 @endguest
 
+                        @role('Admin')
+                        <li class="nav-item dropdown {{Request::is('dashboard*') ? 'bg-warning' : 'bg-info'}}">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                مدیریت
+                            </a>
+                            <ul class="dropdown-menu {{Request::is('dashboard*') ? 'bg-warning' : 'bg-info'}}" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item {{Request::is('dashboard/posts*') ? 'active' : ''}}" href="{{url('dashboard/posts')}}">اخبار</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item {{Request::is('dashboard/brands*') ? 'active' : ''}}" href="{{url('dashboard/brands')}}">شرکت / برند</a></li>
+                                <li><a class="dropdown-item {{Request::is('dashboard/products*') ? 'active' : ''}}" href="{{url('dashboard/products')}}">محصولات</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item {{Request::is('dashboard/faqs*') ? 'active' : ''}}" href="{{url('dashboard/faqs')}}">FAQs</a></li>
+                                <li><a class="dropdown-item {{Request::is('dashboard/contacts*') ? 'active' : ''}}" href="{{url('dashboard/contacts')}}">تماسها</a></li>
+
+                            </ul>
+                        </li>
+                        @endrole
+
+                        <li class="nav-item dropdown bg-warning">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                داشبورد
+                            </a>
+                            <ul class="dropdown-menu bg-warning" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#">غرفه نمایشگاهی</a></li>
+                                <li><a class="dropdown-item" href="#">فروشگاه نمایشگاهی</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">بازدیدکننده</a></li>
+                            </ul>
+                        </li>
+
                     </ul>
-                                    <form class="d-flex">
-                                        <input class="form-control me-2" type="search" placeholder="جستجو" aria-label="Search" readonly>
+{{--                                    <form class="d-flex">--}}
+{{--                                        <input class="form-control me-2" type="search" placeholder="جستجو" aria-label="Search" readonly>--}}
 {{--                                        <button class="btn btn-outline-success" type="submit">Search</button>--}}
-                                    </form>
+{{--                                    </form>--}}
                 </div>
 
             </div>
         </nav>
-    </div>
+{{--    </div>--}}
 
 </header>
         <main class="py-4">
             @yield('content')
         </main>
         <div class="container my-5">
-            <img src="images/title.png" alt="">
+            <img src="{{url('images/title.png')}}" alt="">
         </div>
         <footer class="footer-1">
             <div class="container text-light">
                 <div class="row d-flex justify-content-around">
                     <div class="col">
-                        <img src="images/Asset54x.png" alt="" style="max-height: 90px">
+                        <img src="{{url('images/Asset54x.png')}}" alt="" style="max-height: 90px">
                     </div>
                     <div class="col d-flex justify-content-end align-items-center">
-                        <img src="images/contact-text-1.png" alt="">
+                        <img src="{{url('images/contact-text-1.png')}}" alt="">
 {{--                        <p>dd</p>--}}
 {{--                        <p>dd</p>--}}
 {{--                        <p>dd</p>--}}
@@ -124,14 +158,16 @@
             <div class="container text-light">
                 <div class="row">
                     <div class="col">
-                        <p>
+                        <small>
                             <span class="text-secondary">©</span>
                             کلیه حقوق مربوط به
                             <span class="text-info">
+                                <a href="{{url('/')}}">
                                 شرکت گردشگری هفت اقلیم
+                                </a>
                             </span>
                             ، مجری پاویون جمهوری اسلامی ایران در اکسپو 2023 قطر است.
-                        </p>
+                        </small>
                     </div>
                 </div>
             </div>

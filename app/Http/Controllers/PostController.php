@@ -45,6 +45,8 @@ class PostController extends Controller
 
 
         $post = Post::where('slug',$post)->first();
+        $date = new Carbon($post->created_at);
+        $post->diff = $date->diffForHumans(Carbon::now());
         return view('posts.show', compact('post','categoriesInMenus'));
     }
 
