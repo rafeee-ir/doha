@@ -10,13 +10,89 @@
                 <div class="col-lg-8 col-12">
                     <div class="form-main">
                         <div class="title">
-                            <h4>اکسپو 2023 قطر</h4>
-                            <h1>پاویون جمهوری اسلامی ایران</h1>
-                            <h6>کشاورزی مدرن و باغبانی</h6>
+                            <h4></h4>
+                            <h1>تماس با ما</h1>
+                            <h6>پاویون جمهوری اسلامی ایران در اکسپو 2023 قطر</h6>
 
                             <p class="pt-3" style="font-size: 1.1rem">
-                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                لطفا جهت تماس با ما از یکی از راه های زیر اقدام نمایید.
                             </p>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="card ">
+                                        {{--                                        <div class="card-header">اطلاعات تماس در قطر</div>--}}
+                                        <div class="card-body">
+                                            <div><span>آدرس وبسایت رسمی</span></div>
+                                            <div><span>QATAREXPO.IR</span></div>
+                                            <br>
+                                            <div><span>پست الکترونیک</span></div>
+                                            <div><span>info@qatarexpo.ir</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header">اطلاعات تماس در ایران</div>
+                                        <div class="card-body">
+                                            <div><span>آدرس دفتر مرکزی پاویون</span></div>
+                                            <div><span>تهران - نمایشگاه بین المللی تهران - سالن 62</span></div>
+                                            <br>
+                                            <div><span>تلفن تماس</span></div>
+                                            <div><span>021-2222222</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card">
+                                        <div class="card-header">اطلاعات تماس در قطر</div>
+                                        <div class="card-body">
+                                            <div><span>آدرس دفتر مرکزی پاویون</span></div>
+                                            <div><span>تهران - نمایشگاه بین المللی تهران - سالن 62</span></div>
+                                            <br>
+                                            <div><span>تلفن تماس</span></div>
+                                            <div><span>021-2222222</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header">واحد بازاریابی و فروش</div>
+                                        <div class="card-body">
+
+                                            <span>پست الکترونیک</span> | <span>crm@qatarexpo.ir</span>
+                                            <br>
+                                            <span>تلفن تماس</span> | <span>0215555555</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header">واحد بین الملل</div>
+                                        <div class="card-body">
+
+                                            <span>پست الکترونیک</span> | <span>crm@qatarexpo.ir</span>
+                                            <br>
+                                            <span>تلفن تماس</span> | <span>0215555555</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header">واحد امور مشتریان</div>
+                                        <div class="card-body">
+
+                                            <span>پست الکترونیک</span> | <span>crm@qatarexpo.ir</span>
+                                            <br>
+                                            <span>تلفن تماس</span> | <span>0215555555</span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>

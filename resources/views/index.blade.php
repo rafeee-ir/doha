@@ -4,7 +4,7 @@
 {{--    <div class="col-12">--}}
 {{--        <h1 class="text-center">پاویون رسمی جمهوری اسلامی ایران در اکسپو 2023 قطر</h1>--}}
 {{--    </div>--}}
-    <div class="container-fluid header-home">
+    <div class="container-fluid header-home hvr-float">
 
     </div>
 
@@ -61,13 +61,17 @@
             <div class="row mt-5">
                 <div class="col-md-1"></div>
                 <div class="col-md-3">
-                    <h5>di ljk</h5>
-                    <h2>درباره اکسپو</h2>
-                    <p>ریسیسی</p>
+                    <h5>درباره اکسپو 2023 قطر
+                    </h5>
+                    <h2>بیابان سبز، محیط زیست بهتر</h2>
+                    <a href="{{url('about-expo')}}" class="btn btn-lg btn-dark">معرفی بیشتر</a>
                 </div>
                 <div class="col-md-7">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, animi aperiam atque corporis culpa deserunt dicta, doloribus dolorum eveniet explicabo in minus obcaecati praesentium saepe similique sint, sit temporibus voluptas!
+                        در زمان‌های دور سبزکردن بیابان یک چالش بزرگ بود. امروزه سبزکردن بیابان امکان‌پذیر است. برای حل کردن این چالش باید سریعا دست به کار شد چراکه مشکلات جهانی مربوط به آب، انرژی و تهدید غذایی غیرقابل چشم‌پوشی هستند.
+                    </p>
+                    <p>
+                        فناوری‌هایی که کاشت پایدار درختان و گیاهان را در سرزمین‌های خشک و بیابانی میسر میکنند اهمیت بسیار زیادی در کاهش مشکلات بیابان‌زایی در سراسر جهان دارند.
                     </p>
 
                 </div>

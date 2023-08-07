@@ -69,11 +69,11 @@
                                         </li>
                                     @endif
 
-                                    @if (Route::has('register'))
-                                        <li class="nav-item hvr-float">
-                                            <a class="nav-link {{Request::is('register') ? 'active' : ''}}" href="{{ route('register') }}">{{ __('ثبت نام') }}</a>
-                                        </li>
-                                    @endif
+{{--                                    @if (Route::has('register'))--}}
+{{--                                        <li class="nav-item hvr-float">--}}
+{{--                                            <a class="nav-link {{Request::is('register') ? 'active' : ''}}" href="{{ route('register') }}">{{ __('ثبت نام') }}</a>--}}
+{{--                                        </li>--}}
+{{--                                    @endif--}}
                                 @else
                                     <li class="hvr-float nav-item dropdown">
                                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -112,20 +112,20 @@
                         </li>
                         @endrole
 
-                        @role('company')
+{{--                        @role('company')--}}
 
-                        <li class="hvr-float nav-item dropdown bg-warning">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                داشبورد
-                            </a>
-                            <ul class="dropdown-menu bg-warning" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">غرفه نمایشگاهی</a></li>
-                                <li><a class="dropdown-item" href="#">فروشگاه نمایشگاهی</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">بازدیدکننده</a></li>
-                            </ul>
-                        </li>
-                        @endrole
+{{--                        <li class="hvr-float nav-item dropdown bg-warning">--}}
+{{--                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
+{{--                                داشبورد--}}
+{{--                            </a>--}}
+{{--                            <ul class="dropdown-menu bg-warning" aria-labelledby="navbarScrollingDropdown">--}}
+{{--                                <li><a class="dropdown-item" href="#">ارسال مدارک</a></li>--}}
+{{--                                <li><a class="dropdown-item" href="#">فروشگاه نمایشگاهی</a></li>--}}
+{{--                                <li><hr class="dropdown-divider"></li>--}}
+{{--                                <li><a class="dropdown-item" href="#">بازدیدکننده</a></li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
+{{--                        @endrole--}}
 
 
                     </ul>

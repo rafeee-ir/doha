@@ -42,13 +42,13 @@ class SiteController extends Controller
         return view('about-expo');
     }
     public function conditionsPavilion(){
-        return view('about-expo');
+        return view('conditions.pavilion');
     }
     public function conditionsShop(){
-        return view('about-expo');
+        return view('conditions.shop');
     }
     public function conditionsVisitor(){
-        return view('about-expo');
+        return view('conditions.visitor');
     }
 
 }
