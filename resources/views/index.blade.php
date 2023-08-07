@@ -1,11 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-{{--    <div class="col-12">--}}
-{{--        <h1 class="text-center">پاویون رسمی جمهوری اسلامی ایران در اکسپو 2023 قطر</h1>--}}
-{{--    </div>--}}
-    <div class="container-fluid header-home hvr-float">
 
+    <div class="container-fluid hvr-float">
+        <img class="img-fluid" src="{{url('images/banner3.jpg')}}" alt="{{ config('app.name') }}">
     </div>
 
     <section class="container my-5">
@@ -13,12 +11,12 @@
     </section>
     <section class="container my-5">
         <div class="row bg-light mx-4">
-            <div class="col-12 m-5">
+            <div class="col-12 m-5 d-none d-md-block">
                 <h1 class="text-center">پاویون رسمی جمهوری اسلامی ایران در اکسپو 2023 قطر</h1>
             </div>
             <div class="col-12">
                 <h2>آخرین اخبار اکسپو 2023</h2>
-                <p class="subheader">
+                <p class="subheader d-none d-md-block">
                     جدیدترین داستان ها و اتفاقات را از اکوسیستم اکسپو قطر به شما اطلاع رسانی می کنیم
                 </p>
             </div>
@@ -26,7 +24,7 @@
 {{--                <div class="col p-md-4">--}}
 
                     @forelse($posts as $post)
-                        <div class="card border-0 p-5">
+                        <div class="card border-0 p-md-5">
 
                             <div class="hvr-shrink">
                                 <a href="{{url('blog',$post->slug)}}">
@@ -37,7 +35,7 @@
                                 <a href="{{url('blog',$post->slug)}}" class="text-decoration-none text-dark">
                                 <h5 class="card-title">{{$post->title}}</h5>
                                 </a>
-                                <p class="card-text">{{strip_tags(Str::limit($post->content,70))}}</p>
+                                <p class="card-text  d-none d-md-block">{{strip_tags(Str::limit($post->content,70))}}</p>
                             </div>
                         </div>
                     @empty
@@ -60,7 +58,7 @@
         <div class="container">
             <div class="row mt-5">
                 <div class="col-md-1"></div>
-                <div class="col-md-3">
+                <div class="col-md-3 pb-5">
                     <h5>درباره اکسپو 2023 قطر
                     </h5>
                     <h2>بیابان سبز، محیط زیست بهتر</h2>
@@ -70,7 +68,7 @@
                     <p>
                         در زمان‌های دور سبزکردن بیابان یک چالش بزرگ بود. امروزه سبزکردن بیابان امکان‌پذیر است. برای حل کردن این چالش باید سریعا دست به کار شد چراکه مشکلات جهانی مربوط به آب، انرژی و تهدید غذایی غیرقابل چشم‌پوشی هستند.
                     </p>
-                    <p>
+                    <p class=" d-none d-md-block">
                         فناوری‌هایی که کاشت پایدار درختان و گیاهان را در سرزمین‌های خشک و بیابانی میسر میکنند اهمیت بسیار زیادی در کاهش مشکلات بیابان‌زایی در سراسر جهان دارند.
                     </p>
 
@@ -79,7 +77,7 @@
                 <div class="col-md-1"></div>
 
                 <div class="col-10">
-                    <img src="{{url('images/future-img-1.png')}}" alt="" style="height: 500px; border: green solid 1px; border-radius: 30px; width: 100%">
+                    <img class="img-fluid" src="{{url('images/future-img-1.png')}}" alt="" style="border: green solid 1px; border-radius: 30px; width: 100%">
 
                 </div>
                 <div class="col-md-1"></div>
@@ -93,10 +91,10 @@
         <div class="container">
         <div class="row mx-4">
             <div class="col-12">
-{{--                <h2>ایران در اکسپو 2023 قطر</h2>--}}
-{{--                <p class="subheader">--}}
-{{--                    شرکت ها و موسساتی که فرصت حضور در اکسپو 2023 قطر را پیدا کردند--}}
-{{--                </p>--}}
+                <h2>ایران در اکسپو 2023 قطر</h2>
+                <p class="subheader d-none d-md-block">
+                    شرکت ها و موسساتی که فرصت حضور در اکسپو 2023 قطر را پیدا کردند
+                </p>
             </div>
             <div class="col-12">
                <p class="text-center">جای شما اینجا خالیست</p>
@@ -111,10 +109,10 @@
         <div class="container">
         <div class="row mx-4">
             <div class="col-12">
-{{--                <h2>محصولات عرضه شده ایران در اکسپو 2023 قطر</h2>--}}
-{{--                <p class="subheader">--}}
-{{--                    محصولاتی که در اکسپو 2023 قطر در پاویون جمهوری اسلامی ایران عرضه شده است--}}
-{{--                </p>--}}
+                <h2>محصولات عرضه شده ایران در اکسپو 2023 قطر</h2>
+                <p class="subheader  d-none d-md-block">
+                    محصولاتی که در اکسپو 2023 قطر در پاویون جمهوری اسلامی ایران عرضه شده است
+                </p>
             </div>
         </div>
 

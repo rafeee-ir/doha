@@ -14,17 +14,11 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         $categories = [
-            'Furniture and interior decoration',
-            'Food and grocery',
-            'Kitchen appliance',
-            'Catering equipment',
-            'Health and beauty',
-            'Handicrafts and decorative',
-            'Clothes, shoes and accessories',
-            'Sport equipment',
-            'Toys, children and baby',
-            'Petrochemicals',
-            'Construction material and equipment',
+            'پایداری',
+            'کشاورزی مدرن',
+            'فناوری و نوآوری',
+            'آگاهی محیط زیستی',
+
         ];
 
         foreach ($categories as $category) {
