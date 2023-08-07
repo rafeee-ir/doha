@@ -1,6 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
+{{--    <div class="col-12">--}}
+{{--        <h1 class="text-center">پاویون رسمی جمهوری اسلامی ایران در اکسپو 2023 قطر</h1>--}}
+{{--    </div>--}}
     <div class="container-fluid header-home">
 
     </div>
@@ -10,8 +13,11 @@
     </section>
     <section class="container my-5">
         <div class="row bg-light mx-4">
+            <div class="col-12 m-5">
+                <h1 class="text-center">پاویون رسمی جمهوری اسلامی ایران در اکسپو 2023 قطر</h1>
+            </div>
             <div class="col-12">
-                <h2>در قطر اکسپو</h2>
+                <h2>آخرین اخبار اکسپو 2023</h2>
                 <p class="subheader">
                     جدیدترین داستان ها و اتفاقات را از اکوسیستم اکسپو قطر به شما اطلاع رسانی می کنیم
                 </p>
@@ -51,14 +57,45 @@
 
 
     <section class="container-fluid my-5 bg-white py-5">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <h5>di ljk</h5>
+                    <h2>درباره اکسپو</h2>
+                    <p>ریسیسی</p>
+                </div>
+                <div class="col-md-7">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, animi aperiam atque corporis culpa deserunt dicta, doloribus dolorum eveniet explicabo in minus obcaecati praesentium saepe similique sint, sit temporibus voluptas!
+                    </p>
+
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-1"></div>
+
+                <div class="col-10">
+                    <img src="{{url('images/future-img-1.png')}}" alt="" style="height: 500px; border: green solid 1px; border-radius: 30px; width: 100%">
+
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid my-5 py-5">
 
         <div class="container">
         <div class="row mx-4">
             <div class="col-12">
-                <h2>ایران در اکسپو 2023 قطر</h2>
-                <p class="subheader">
-                    شرکت ها و موسساتی که فرصت حضور در اکسپو 2023 قطر را پیدا کردند
-                </p>
+{{--                <h2>ایران در اکسپو 2023 قطر</h2>--}}
+{{--                <p class="subheader">--}}
+{{--                    شرکت ها و موسساتی که فرصت حضور در اکسپو 2023 قطر را پیدا کردند--}}
+{{--                </p>--}}
+            </div>
+            <div class="col-12">
+               <p class="text-center">جای شما اینجا خالیست</p>
             </div>
         </div>
 
@@ -70,10 +107,10 @@
         <div class="container">
         <div class="row mx-4">
             <div class="col-12">
-                <h2>محصولات عرضه شده ایران در اکسپو 2023 قطر</h2>
-                <p class="subheader">
-                    محصولاتی که در اکسپو 2023 قطر در پاویون جمهوری اسلامی ایران عرضه شده است
-                </p>
+{{--                <h2>محصولات عرضه شده ایران در اکسپو 2023 قطر</h2>--}}
+{{--                <p class="subheader">--}}
+{{--                    محصولاتی که در اکسپو 2023 قطر در پاویون جمهوری اسلامی ایران عرضه شده است--}}
+{{--                </p>--}}
             </div>
         </div>
 

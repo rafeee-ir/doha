@@ -31,47 +31,51 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarScroll">
+                <div class="collapse navbar-collapse" id="navbarScroll" style="    font-size: 1.1rem;
+    font-weight: 600;">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll    " style="--bs-scroll-height: 100px;">
-                        <li class="nav-item">
-                            <a class="nav-link {{Request::is('/') ? 'active' : ''}}" aria-current="page" href="{{url('/')}}">اکسپو</a>
+                        <li class="nav-item hvr-float">
+                            <a class=" nav-link {{Request::is('/') ? 'active' : ''}}" aria-current="page" href="{{url('/')}}">صفحه اصلی</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item hvr-float">
                             <a class="nav-link {{Request::is('about') ? 'active' : ''}}" href="{{url('about')}}">درباره</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item hvr-float">
                             <a class="nav-link {{Request::is('blog*') ? 'active' : ''}}" href="{{url('blog')}}">اخبار</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item hvr-float">
+                            <a class="nav-link {{Request::is('about-expo') ? 'active' : ''}}" href="{{url('about-expo')}}">معرفی اکسپو</a>
+                        </li>
+                        <li class="hvr-float nav-item dropdown">
+                            <a class="nav-link dropdown-toggle {{Request::is('conditions*') ? 'active' : ''}}" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 شرایط ثبت نام
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">غرفه نمایشگاهی</a></li>
-                                <li><a class="dropdown-item" href="#">فروشگاه نمایشگاهی</a></li>
+                                <li><a class="dropdown-item {{Request::is('conditions/pavilion') ? 'active' : ''}}" href="{{url('conditions/pavilion')}}">غرفه نمایشگاهی</a></li>
+                                <li><a class="dropdown-item {{Request::is('conditions/shop') ? 'active' : ''}}" href="{{url('conditions/shop')}}">فروشگاه نمایشگاهی</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">بازدیدکننده</a></li>
+                                <li><a class="dropdown-item {{Request::is('conditions/visitor') ? 'active' : ''}}" href="{{url('conditions/visitor')}}">بازدیدکننده</a></li>
                             </ul>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="hvr-float nav-item">
                             <a class="nav-link {{Request::is('contact') ? 'active' : ''}}" href="{{url('contact')}}">تماس با ما</a>
                         </li>
 
                                 @guest
                                     @if (Route::has('login'))
-                                        <li class="nav-item">
+                                        <li class="nav-item hvr-float">
                                             <a class="nav-link {{Request::is('login') ? 'active' : ''}}" href="{{ route('login') }}">{{ __('ورود') }}</a>
                                         </li>
                                     @endif
 
-{{--                                    @if (Route::has('register'))--}}
-{{--                                        <li class="nav-item">--}}
-{{--                                            <a class="nav-link" href="{{ route('register') }}">{{ __('ثبت نام') }}</a>--}}
-{{--                                        </li>--}}
-{{--                                    @endif--}}
+                                    @if (Route::has('register'))
+                                        <li class="nav-item hvr-float">
+                                            <a class="nav-link {{Request::is('register') ? 'active' : ''}}" href="{{ route('register') }}">{{ __('ثبت نام') }}</a>
+                                        </li>
+                                    @endif
                                 @else
-                                    <li class="nav-item dropdown">
+                                    <li class="hvr-float nav-item dropdown">
                                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                             {{ Auth::user()->name }}
                                         </a>
@@ -91,7 +95,7 @@
                                 @endguest
 
                         @role('Admin')
-                        <li class="nav-item dropdown {{Request::is('dashboard*') ? 'bg-warning' : 'bg-info'}}">
+                        <li class="hvr-float nav-item dropdown {{Request::is('dashboard*') ? 'bg-warning' : 'bg-info'}}">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 مدیریت
                             </a>
@@ -108,7 +112,9 @@
                         </li>
                         @endrole
 
-                        <li class="nav-item dropdown bg-warning">
+                        @role('company')
+
+                        <li class="hvr-float nav-item dropdown bg-warning">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 داشبورد
                             </a>
@@ -119,8 +125,11 @@
                                 <li><a class="dropdown-item" href="#">بازدیدکننده</a></li>
                             </ul>
                         </li>
+                        @endrole
+
 
                     </ul>
+{{--                    <boutton class="btn btn-sm btn-light text-info">ثبت نام نمایشگاه</boutton>--}}
 {{--                                    <form class="d-flex">--}}
 {{--                                        <input class="form-control me-2" type="search" placeholder="جستجو" aria-label="Search" readonly>--}}
 {{--                                        <button class="btn btn-outline-success" type="submit">Search</button>--}}

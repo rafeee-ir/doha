@@ -2,7 +2,7 @@ body {
     font-family: Vazirmatn, sans-serif;
 }
 .header-home{
-    background-image: url("../../public/images/2023.jpg");
+    background-image: url("images/2023.jpg");
     background-position: center;
     background-color: #cccccc;
     background-size: cover;
@@ -44,4 +44,8 @@ h1,h2,h3,h4,h5,h6{
 p{
     font-size: 1.4rem;
     line-height: 2.4rem;
+}
+.active{
+    color: #93BF1C!important;
+    font-weight: 900!important;
 }

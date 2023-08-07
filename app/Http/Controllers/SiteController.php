@@ -38,4 +38,17 @@ class SiteController extends Controller
 
         return view('search',compact('products','categoriesInMenus'));
     }
+    public function aboutExpo(){
+        return view('about-expo');
+    }
+    public function conditionsPavilion(){
+        return view('about-expo');
+    }
+    public function conditionsShop(){
+        return view('about-expo');
+    }
+    public function conditionsVisitor(){
+        return view('about-expo');
+    }
+
 }

@@ -57,6 +57,8 @@ Route::get('faq',[FaqController::class, 'index']);
 
 
 Route::get('cat/{product}',[CategoryController::class,'show'])->name('categories.show');
+Route::get('about-expo',[SiteController::class,'aboutExpo'])->name('aboutExpo.show');
+
 
 
 
@@ -67,6 +69,11 @@ Route::get('/home',
         return redirect('/dashboard');
     });
 
+Route::name('conditions')->prefix('conditions')->group(function() {
+    Route::get('pavilion',[SiteController::class,'conditionsPavilion']);
+    Route::get('shop',[SiteController::class,'conditionsShop']);
+    Route::get('visitor',[SiteController::class,'conditionsVisitor']);
+});
 Route::name('dashboard')->prefix('dashboard')->middleware('auth')->group(function() {
 
     Route::resource('users', UserController::class);

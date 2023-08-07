@@ -2,8 +2,6 @@
 <html lang="en" >
 <head>
     <meta charset="UTF-8">
-{{--    <title>CodePen - Countdown Timer</title>--}}
-{{--    <link rel="stylesheet" href="./style.css">--}}
 <style>
     /* general styling */
     :root {
