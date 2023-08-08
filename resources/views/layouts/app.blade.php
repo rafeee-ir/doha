@@ -74,37 +74,37 @@
                             <a class="nav-link {{Request::is('contact') ? 'active' : ''}}" href="{{url('contact')}}">تماس با ما</a>
                         </li>
 
-                                @guest
-                                    @if (Route::has('login'))
-                                        <li class="nav-item hvr-grow badge">
-                                            <a class="nav-link {{Request::is('login') ? 'active' : ''}}" href="{{ route('login') }}">{{ __('ورود') }}</a>
-                                        </li>
-                                    @endif
+{{--                                @guest--}}
+{{--                                    @if (Route::has('login'))--}}
+{{--                                        <li class="nav-item hvr-grow badge">--}}
+{{--                                            <a class="nav-link {{Request::is('login') ? 'active' : ''}}" href="{{ route('login') }}">{{ __('ورود') }}</a>--}}
+{{--                                        </li>--}}
+{{--                                    @endif--}}
 
 {{--                                    @if (Route::has('register'))--}}
 {{--                                        <li class="nav-item hvr-grow badge">--}}
 {{--                                            <a class="nav-link {{Request::is('register') ? 'active' : ''}}" href="{{ route('register') }}">{{ __('ثبت نام') }}</a>--}}
 {{--                                        </li>--}}
 {{--                                    @endif--}}
-                                @else
-                                    <li class="hvr-grow nav-item dropdown badge">
-                                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                            {{ Auth::user()->name }}
-                                        </a>
+{{--                                @else--}}
+{{--                                    <li class="hvr-grow nav-item dropdown badge">--}}
+{{--                                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>--}}
+{{--                                            {{ Auth::user()->name }}--}}
+{{--                                        </a>--}}
 
-                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                            <a class="dropdown-item" href="{{ route('logout') }}"
-                                               onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                                {{ __('خروج') }}
-                                            </a>
+{{--                                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">--}}
+{{--                                            <a class="dropdown-item" href="{{ route('logout') }}"--}}
+{{--                                               onclick="event.preventDefault();--}}
+{{--                                                     document.getElementById('logout-form').submit();">--}}
+{{--                                                {{ __('خروج') }}--}}
+{{--                                            </a>--}}
 
-                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                                @csrf
-                                            </form>
-                                        </div>
-                                    </li>
-                                @endguest
+{{--                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">--}}
+{{--                                                @csrf--}}
+{{--                                            </form>--}}
+{{--                                        </div>--}}
+{{--                                    </li>--}}
+{{--                                @endguest--}}
 
 {{--                        @role('Admin')--}}
 {{--                        <li class="hvr-grow badge nav-item dropdown {{Request::is('dashboard*') ? 'bg-warning' : 'bg-info'}}">--}}
@@ -193,11 +193,11 @@
                             </li>
                         @endif
 
-                        {{--                                    @if (Route::has('register'))--}}
-                        {{--                                        <li class="nav-item hvr-grow badge">--}}
-                        {{--                                            <a class="nav-link {{Request::is('register') ? 'active' : ''}}" href="{{ route('register') }}">{{ __('ثبت نام') }}</a>--}}
-                        {{--                                        </li>--}}
-                        {{--                                    @endif--}}
+{{--                                                            @if (Route::has('register'))--}}
+{{--                                                                <li class="nav-item">--}}
+{{--                                                                    <a class="nav-link {{Request::is('register') ? 'active' : ''}}" href="{{ route('register') }}">{{ __('ثبت نام') }}</a>--}}
+{{--                                                                </li>--}}
+{{--                                                            @endif--}}
                     @else
                         <li class="nav-item dropdown">
                             <a class="dropdown-toggle nav-link" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
