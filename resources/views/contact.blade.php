@@ -39,7 +39,7 @@
                                             <div><span>تهران - نمایشگاه بین المللی تهران - سالن 62</span></div>
                                             <br>
                                             <div><span>تلفن تماس</span></div>
-                                            <div><span>021-2222222</span></div>
+                                            <div><span>(+98)912-39668242</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -51,7 +51,7 @@
                                             <div><span>تهران - نمایشگاه بین المللی تهران - سالن 62</span></div>
                                             <br>
                                             <div><span>تلفن تماس</span></div>
-                                            <div><span>021-2222222</span></div>
+                                            <div><span>(+974)33036002</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -60,21 +60,21 @@
                                         <div class="card-header">واحد بازاریابی و فروش</div>
                                         <div class="card-body">
 
-                                            <span>پست الکترونیک</span> | <span>crm@qatarexpo.ir</span>
+                                            <span>پست الکترونیک</span> | <span>sales@qatarexpo.ir</span>
                                             <br>
-                                            <span>تلفن تماس</span> | <span>0215555555</span>
+{{--                                            <span>تلفن تماس</span> | <span>0215555555</span>--}}
 
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="card">
-                                        <div class="card-header">واحد بین الملل</div>
+                                        <div class="card-header">واحد خدمات حمل و نقل و هتلینگ</div>
                                         <div class="card-body">
 
-                                            <span>پست الکترونیک</span> | <span>crm@qatarexpo.ir</span>
+                                            <span>پست الکترونیک</span> | <span>es@qatarexpo.ir</span>
                                             <br>
-                                            <span>تلفن تماس</span> | <span>0215555555</span>
+{{--                                            <span>تلفن تماس</span> | <span>0215555555</span>--}}
 
                                         </div>
                                     </div>
@@ -86,7 +86,7 @@
 
                                             <span>پست الکترونیک</span> | <span>crm@qatarexpo.ir</span>
                                             <br>
-                                            <span>تلفن تماس</span> | <span>0215555555</span>
+{{--                                            <span>تلفن تماس</span> | <span>0215555555</span>--}}
 
                                         </div>
                                     </div>
