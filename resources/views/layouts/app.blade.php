@@ -183,6 +183,9 @@
                     <li class="nav-item">
                         <a class="nav-link {{Request::is('about-expo') ? 'active' : 'text-dark'}}" href="{{url('about-expo')}}">معرفی اکسپو</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{Request::is('contact') ? 'active' : 'text-dark'}}" href="{{url('contact')}}">تماس با ما</a>
+                    </li>
                     @guest
                         @if (Route::has('login'))
                             <li class="nav-item">
