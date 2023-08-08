@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container-fluid hvr-float">
+    <div class="container-fluid">
         <img class="img-fluid" src="{{url('images/banner3.jpg')}}" alt="{{ config('app.name') }}">
     </div>
 
