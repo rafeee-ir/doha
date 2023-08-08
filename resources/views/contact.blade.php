@@ -39,7 +39,7 @@
                                             <div><span>تهران - نمایشگاه بین المللی تهران - سالن 62</span></div>
                                             <br>
                                             <div><span>تلفن تماس</span></div>
-                                            <div><span>(+98)912-39668242</span></div>
+                                            <div><span class="text-secondary">0098-</span><span>91239668242</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -51,7 +51,7 @@
                                             <div><span>تهران - نمایشگاه بین المللی تهران - سالن 62</span></div>
                                             <br>
                                             <div><span>تلفن تماس</span></div>
-                                            <div><span>(+974)33036002</span></div>
+                                            <div><span class="text-secondary">00974-</span><span>33036002</span></div>
                                         </div>
                                     </div>
                                 </div>
