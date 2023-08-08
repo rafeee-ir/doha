@@ -11,3 +11,4 @@ vendor/spatie/laravel-sitemap/
 vendor/spatie/robots-txt/
 vendor/spatie/temporary-directory/
 vendor/symfony/dom-crawler/
+public/storage
