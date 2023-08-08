@@ -35,22 +35,22 @@
                 <div class="collapse navbar-collapse" id="navbarScroll" style="    font-size: 1.1rem;
     font-weight: 600;">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll    " style="--bs-scroll-height: 100px;">
-                        <li class="nav-item hvr-float">
+                        <li class="nav-item hvr-float badge">
                             <a class=" nav-link {{Request::is('/') ? 'active' : ''}}" aria-current="page" href="{{url('/')}}">صفحه اصلی</a>
                         </li>
-                        <li class="nav-item hvr-float">
+                        <li class="nav-item hvr-float badge">
                             <a class="nav-link {{Request::is('about') ? 'active' : ''}}" href="{{url('about')}}">درباره</a>
                         </li>
-                        <li class="nav-item hvr-float">
+                        <li class="nav-item hvr-float badge">
                             <a class="nav-link {{Request::is('blog*') ? 'active' : ''}}" href="{{url('blog')}}">اخبار</a>
                         </li>
-                        <li class="nav-item hvr-float">
+                        <li class="nav-item hvr-float badge">
                             <a class="nav-link {{Request::is('faq') ? 'active' : ''}}" href="{{url('faq')}}">سوالات متداول</a>
                         </li>
-                        <li class="nav-item hvr-float">
+                        <li class="nav-item hvr-float badge">
                             <a class="nav-link {{Request::is('about-expo') ? 'active' : ''}}" href="{{url('about-expo')}}">معرفی اکسپو</a>
                         </li>
-                        <li class="hvr-float nav-item dropdown">
+                        <li class="hvr-float nav-item dropdown badge">
                             <a class="nav-link dropdown-toggle {{Request::is('conditions*') ? 'active' : ''}}" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 شرایط ثبت نام
                             </a>
@@ -62,24 +62,24 @@
                             </ul>
                         </li>
 
-                        <li class="hvr-float nav-item">
+                        <li class="hvr-float nav-item badge">
                             <a class="nav-link {{Request::is('contact') ? 'active' : ''}}" href="{{url('contact')}}">تماس با ما</a>
                         </li>
 
                                 @guest
                                     @if (Route::has('login'))
-                                        <li class="nav-item hvr-float">
+                                        <li class="nav-item hvr-float badge">
                                             <a class="nav-link {{Request::is('login') ? 'active' : ''}}" href="{{ route('login') }}">{{ __('ورود') }}</a>
                                         </li>
                                     @endif
 
 {{--                                    @if (Route::has('register'))--}}
-{{--                                        <li class="nav-item hvr-float">--}}
+{{--                                        <li class="nav-item hvr-float badge">--}}
 {{--                                            <a class="nav-link {{Request::is('register') ? 'active' : ''}}" href="{{ route('register') }}">{{ __('ثبت نام') }}</a>--}}
 {{--                                        </li>--}}
 {{--                                    @endif--}}
                                 @else
-                                    <li class="hvr-float nav-item dropdown">
+                                    <li class="hvr-float nav-item dropdown badge">
                                         <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                             {{ Auth::user()->name }}
                                         </a>
@@ -99,7 +99,7 @@
                                 @endguest
 
                         @role('Admin')
-                        <li class="hvr-float nav-item dropdown {{Request::is('dashboard*') ? 'bg-warning' : 'bg-info'}}">
+                        <li class="hvr-float badge nav-item dropdown {{Request::is('dashboard*') ? 'bg-warning' : 'bg-info'}}">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 مدیریت
                             </a>
