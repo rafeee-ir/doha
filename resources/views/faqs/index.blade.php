@@ -25,7 +25,7 @@
                     <div class="card-body">
                         <div class="">
                             <div class="card-body">
-                                <h4 class="header-title mb-4">Frequently asked questions (FAQ)</h4>
+                                <h4 class="header-title mb-4">سوالات متداول</h4>
                                 <div class="list-group list-group-flush">
                                     @forelse($faqs as $faq)
                                     <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">

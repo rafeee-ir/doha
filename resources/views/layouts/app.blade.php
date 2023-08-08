@@ -12,7 +12,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-    <link rel="icon" type="image/png" href="{{url('images/fav.png')}}">
+{{--    <link rel="icon" type="image/png" href="{{url('images/fav.png')}}">--}}
+    <link rel="icon" type="image/x-icon" href="{{url('images/favicon.ico')}}" />
 
 
     <!-- Scripts -->
@@ -42,6 +43,9 @@
                         </li>
                         <li class="nav-item hvr-float">
                             <a class="nav-link {{Request::is('blog*') ? 'active' : ''}}" href="{{url('blog')}}">اخبار</a>
+                        </li>
+                        <li class="nav-item hvr-float">
+                            <a class="nav-link {{Request::is('faq') ? 'active' : ''}}" href="{{url('faq')}}">سوالات متداول</a>
                         </li>
                         <li class="nav-item hvr-float">
                             <a class="nav-link {{Request::is('about-expo') ? 'active' : ''}}" href="{{url('about-expo')}}">معرفی اکسپو</a>
