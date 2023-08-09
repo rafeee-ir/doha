@@ -42,13 +42,18 @@ class SiteController extends Controller
         return view('about-expo');
     }
     public function conditionsPavilion(){
-        return view('conditions.pavilion');
+        $categories = Category::all();
+        return view('conditions.pavilion',compact('categories'));
     }
     public function conditionsShop(){
-        return view('conditions.shop');
+        $categories = Category::all();
+
+        return view('conditions.shop',compact('categories'));
     }
     public function conditionsVisitor(){
-        return view('conditions.visitor');
+        $categories = Category::all();
+
+        return view('conditions.visitor',compact('categories'));
     }
 
 }

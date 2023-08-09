@@ -60,13 +60,13 @@
                         </li>
                         <li class="hvr-grow nav-item dropdown badge">
                             <a class="nav-link dropdown-toggle {{Request::is('conditions*') ? 'active' : ''}}" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                شرایط ثبت نام
+                                خدمات
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item {{Request::is('conditions/pavilion') ? 'active' : ''}}" href="{{url('conditions/pavilion')}}">غرفه نمایشگاهی</a></li>
-                                <li><a class="dropdown-item {{Request::is('conditions/shop') ? 'active' : ''}}" href="{{url('conditions/shop')}}">فروشگاه نمایشگاهی</a></li>
+                                <li><a class="dropdown-item {{Request::is('pre-register/pavilion') ? 'active' : ''}}" href="{{url('pre-register/pavilion')}}">اجاره غرفه در پاویون</a></li>
+                                <li><a class="dropdown-item {{Request::is('pre-register/shop') ? 'active' : ''}}" href="{{url('pre-register/shop')}}">فروش محصول در اکسپو</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item {{Request::is('conditions/visitor') ? 'active' : ''}}" href="{{url('conditions/visitor')}}">بازدیدکننده</a></li>
+                                <li><a class="dropdown-item {{Request::is('pre-register/visitor') ? 'active' : ''}}" href="{{url('pre-register/visitor')}}">شرکت در تور تجاری</a></li>
                             </ul>
                         </li>
 
@@ -178,6 +178,15 @@
                         <a class="nav-link {{Request::is('blog*') ? 'active' : 'text-dark'}}" href="{{url('blog')}}">اخبار</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link {{Request::is('pre-register/pavilion') ? 'active' : 'text-dark'}}" href="{{url('pre-register/pavilion')}}">اجاره غرفه در پاویون</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{Request::is('pre-register/shop') ? 'active' : 'text-dark'}}" href="{{url('pre-register/shop')}}">فروش محصول در اکسپو</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {{Request::is('pre-register/visitor') ? 'active' : 'text-dark'}}" href="{{url('pre-register/visitor')}}">شرکت در تور تجاری</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link {{Request::is('faq') ? 'active' : 'text-dark'}}" href="{{url('faq')}}">سوالات متداول</a>
                     </li>
                     <li class="nav-item">
@@ -186,38 +195,38 @@
                     <li class="nav-item">
                         <a class="nav-link {{Request::is('contact') ? 'active' : 'text-dark'}}" href="{{url('contact')}}">تماس با ما</a>
                     </li>
-                    @guest
-                        @if (Route::has('login'))
-                            <li class="nav-item">
-                                <a class="nav-link {{Request::is('login') ? 'active' : 'text-dark'}}" href="{{ route('login') }}">{{ __('ورود') }}</a>
-                            </li>
-                        @endif
+{{--                    @guest--}}
+{{--                        @if (Route::has('login'))--}}
+{{--                            <li class="nav-item">--}}
+{{--                                <a class="nav-link {{Request::is('login') ? 'active' : 'text-dark'}}" href="{{ route('login') }}">{{ __('ورود') }}</a>--}}
+{{--                            </li>--}}
+{{--                        @endif--}}
 
 {{--                                                            @if (Route::has('register'))--}}
 {{--                                                                <li class="nav-item">--}}
 {{--                                                                    <a class="nav-link {{Request::is('register') ? 'active' : ''}}" href="{{ route('register') }}">{{ __('ثبت نام') }}</a>--}}
 {{--                                                                </li>--}}
 {{--                                                            @endif--}}
-                    @else
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle nav-link" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                                {{ Auth::user()->name }}
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <li>
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('خروج') }}
-                                    </a>
+{{--                    @else--}}
+{{--                        <li class="nav-item dropdown">--}}
+{{--                            <a class="dropdown-toggle nav-link" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">--}}
+{{--                                {{ Auth::user()->name }}--}}
+{{--                            </a>--}}
+{{--                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">--}}
+{{--                                <li>--}}
+{{--                                    <a class="dropdown-item" href="{{ route('logout') }}"--}}
+{{--                                       onclick="event.preventDefault();--}}
+{{--                                                     document.getElementById('logout-form').submit();">--}}
+{{--                                        {{ __('خروج') }}--}}
+{{--                                    </a>--}}
 
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </li>
-                            </ul>
-                        </li>
-                    @endguest
+{{--                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">--}}
+{{--                                        @csrf--}}
+{{--                                    </form>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
+{{--                    @endguest--}}
 
 
                 </ul>

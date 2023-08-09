@@ -6,6 +6,7 @@ use App\Http\Controllers\FaqController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PreRegisterController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\SiteController;
@@ -38,7 +39,7 @@ Auth::routes();
 
 Route::get('/about', [SiteController::class, 'about'])->name('about.index');
 
-
+Route::resource('per-registers',PreRegisterController::class);
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
@@ -68,8 +69,7 @@ Route::get('/home',
     function(){
         return redirect('/dashboard');
     });
-
-Route::name('conditions')->prefix('conditions')->group(function() {
+Route::name('pre-register')->prefix('pre-register')->group(function() {
     Route::get('pavilion',[SiteController::class,'conditionsPavilion']);
     Route::get('shop',[SiteController::class,'conditionsShop']);
     Route::get('visitor',[SiteController::class,'conditionsVisitor']);
