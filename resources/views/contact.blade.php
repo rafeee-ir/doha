@@ -37,6 +37,7 @@
                                         <div class="card-body">
                                             <div><span>آدرس دفتر مرکزی پاویون</span></div>
                                             <div><span>تهران - نمایشگاه بین المللی تهران - سالن 62</span></div>
+                                            <div class=""><a href="https://goo.gl/maps/7xg8QQ4fDkxdxvMD7" target="_blank" class="btn btn-sm btn-dark">نمایش روی نقشه</a></div>
                                             <br>
                                             <div><span>تلفن تماس</span></div>
                                             <div><span class="text-secondary">0098-</span><span>91239668242</span></div>
@@ -47,8 +48,9 @@
                                     <div class="card">
                                         <div class="card-header">اطلاعات تماس در قطر</div>
                                         <div class="card-body">
-                                            <div><span>آدرس دفتر مرکزی پاویون</span></div>
-                                            <div><span>تهران - نمایشگاه بین المللی تهران - سالن 62</span></div>
+                                            <div><span>آدرس دفتر مرکزی قطر</span></div>
+                                            <div><span>قطر - دوحه - خیابان جوعان - هتل گرندلوکس طبقه اول</span></div>
+                                            <div class=""><a href="https://goo.gl/maps/az7ohnuB7rrbFFe3A" target="_blank" class="btn btn-sm btn-dark">نمایش روی نقشه</a></div>
                                             <br>
                                             <div><span>تلفن تماس</span></div>
                                             <div><span class="text-secondary">00974-</span><span>33036002</span></div>
