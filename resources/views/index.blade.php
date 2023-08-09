@@ -3,7 +3,8 @@
 @section('content')
 
     <div class="container-fluid">
-        <img class="img-fluid" src="{{url('images/banner3.jpg')}}" alt="{{ config('app.name') }}">
+        <img class="img-fluid d-none d-md-block" src="{{url('images/banner3.jpg')}}" alt="{{ config('app.name') }}">
+        <img class="img-fluid d-md-none w-100" src="{{url('images/mobile-top.jpg')}}" alt="{{ config('app.name') }}">
     </div>
 
     <section class="container my-5">
@@ -76,8 +77,9 @@
                 <div class="col-md-1"></div>
                 <div class="col-md-1"></div>
 
-                <div class="col-10">
-                    <img class="img-fluid" src="{{url('images/future-img-1.png')}}" alt="" style="border: green solid 1px; border-radius: 30px; width: 100%">
+                <div class="col-md-10">
+                    <img class="img-fluid d-md-block d-none" src="{{url('images/future-img-1.png')}}" alt="" style="border: green solid 1px; border-radius: 30px; width: 100%">
+                    <img class="img-fluid d-md-none w-100" src="{{url('images/mobile-mid.jpg')}}" alt="" style="border: green solid 1px; border-radius: 30px;">
 
                 </div>
                 <div class="col-md-1"></div>
