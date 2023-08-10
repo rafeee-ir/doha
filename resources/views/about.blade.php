@@ -38,6 +38,9 @@
                                 <a href="{{url('contact')}}" class="btn btn-lg btn-dark">تماس با ما</a>
 
                                 </div>
+                            <div class="text-center mt-5 pt-5" id="mojavez">
+                                <img src="{{url('images/mojavez.jpg')}}" title="مجوز برگزاری نمایشگاه" class="img-fluid">
+                            </div>
 
                         </div>
                     </div>
