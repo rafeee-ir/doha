@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
 use App\Models\Contact;
 use App\Http\Requests\StoreContactRequest;
 use App\Http\Requests\UpdateContactRequest;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 use Spatie\Permission\Models\Role;
 
 
@@ -76,6 +78,19 @@ class ContactController extends Controller
             activity('Contact form added')
                 ->performedOn($contact)
                 ->log($contact->name . ' added a new contact request by ' . $contact->email);
+
+        $mailData = [
+            'name' => $contact->name,
+            'subject' => $contact->subject,
+            'email' => $contact->email,
+            'mobile' => $contact->mobile,
+            'message' => $contact->message,
+            'url' => $contact->url
+        ];
+
+        Mail::to('crm@qatarexpo.ir')->send(new ContactMail($mailData));
+
+
             return redirect(url()->previous() . '#contact')->with('success', 'Contact form sent successfully');
 //        }catch(\Exception $e){
 //            return redirect(url()->previous() . '#contact')->with('error','Something goes wrong!');

@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
+use App\Mail\PreRegisterMail;
 use App\Models\PreRegister;
 use App\Http\Requests\StorePreRegisterRequest;
 use App\Http\Requests\UpdatePreRegisterRequest;
+use Illuminate\Support\Facades\Mail;
 
 class PreRegisterController extends Controller
 {
@@ -42,6 +45,22 @@ class PreRegisterController extends Controller
         activity('Pre Register form added')
             ->performedOn($item)
             ->log($item->company . ' added a new contact request by ' . $item->email);
+
+        $mailData = [
+            'for' => $item->for,
+            'category' => $item->category,
+            'company' => $item->company,
+            'ceo' => $item->ceo,
+            'contact-person' => $request->input('contact-person'),
+            'mobile' => $item->mobile,
+            'email' => $item->email,
+            'site' => $item->site,
+            'description' => $item->description,
+            'url' => $item->url,
+        ];
+
+        Mail::to('crm@qatarexpo.ir')->send(new PreRegisterMail($mailData));
+
         return redirect(url()->previous() . '#pre-register-form')->with('success', 'پیش ثبت نام انجام شد. همکاران ما بزودی با شما تماس خواهند گرفت.');
 //        }catch(\Exception $e){
 //            return redirect(url()->previous() . '#contact')->with('error','Something goes wrong!');
