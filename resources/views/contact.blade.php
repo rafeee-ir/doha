@@ -40,7 +40,7 @@
                                             <div class=""><a href="https://goo.gl/maps/7xg8QQ4fDkxdxvMD7" target="_blank" class="btn btn-sm btn-dark">نمایش روی نقشه</a></div>
                                             <br>
                                             <div><span>تلفن تماس</span></div>
-                                            <div><span class="text-secondary">0098-</span><span>91239668242</span></div>
+                                            <div><a href="tel:+989370161675"><span class="text-secondary">0098-</span><span>9370161675</span></a></div>
                                         </div>
                                     </div>
                                 </div>
