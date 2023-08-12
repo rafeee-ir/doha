@@ -18,9 +18,11 @@ For:
     @endif
 @endforeach
 Category:
-@foreach($mailData['category'] as $item)
+@forelse($mailData['category'] as $item)
     <p>{{$item}}</p>
-@endforeach
+@empty
+    <p>$mailData['category']</p>
+@endforelse
 
 <p>CEO: {{ $mailData['ceo'] }}</p>
 <p>Contact Person: {{ $mailData['contact-person'] }}</p>
