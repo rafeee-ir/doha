@@ -18,11 +18,14 @@ For:
     @endif
 @endforeach
 Category:
-@forelse($mailData['category'] as $item)
+@if (is_array($mailData['category']) || is_object($mailData['category']))
+
+@foreach($mailData['category'] as $item)
     <p>{{$item}}</p>
-@empty
-    <p>$mailData['category']</p>
-@endforelse
+@endforeach
+@else
+    {{$mailData['category']}}
+@endif
 
 <p>CEO: {{ $mailData['ceo'] }}</p>
 <p>Contact Person: {{ $mailData['contact-person'] }}</p>
