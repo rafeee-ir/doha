@@ -47,7 +47,7 @@
                             <a class=" nav-link {{Request::is('/') ? 'active' : ''}}" aria-current="page" href="{{url('/')}}">صفحه اصلی</a>
                         </li>
                         <li class="nav-item hvr-grow badge">
-                            <a class="nav-link {{Request::is('about') ? 'active' : ''}}" href="{{url('about')}}">درباره</a>
+                            <a class="nav-link {{Request::is('about') ? 'active' : ''}}" href="{{url('about')}}">پاویون ایران</a>
                         </li>
                         <li class="nav-item hvr-grow badge">
                             <a class="nav-link {{Request::is('blog*') ? 'active' : ''}}" href="{{url('blog')}}">اخبار</a>
@@ -172,7 +172,7 @@
                         <a class=" nav-link {{Request::is('/') ? 'active' : 'text-dark'}}" aria-current="page" href="{{url('/')}}">صفحه اصلی</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{Request::is('about') ? 'active' : 'text-dark'}}" href="{{url('about')}}">درباره</a>
+                        <a class="nav-link {{Request::is('about') ? 'active' : 'text-dark'}}" href="{{url('about')}}">پاویون ایران</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{Request::is('blog*') ? 'active' : 'text-dark'}}" href="{{url('blog')}}">اخبار</a>
