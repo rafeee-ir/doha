@@ -88,8 +88,8 @@
                 <div class="col-md-10">
                     <div class="row">
                         <div class="col-md-4">
-                            <a href="{{url('images/international-area.jpg')}}" target="_blank">
-                                <img src="{{url('images/international-area.jpg')}}" alt="international area" class="img-fluid">
+                            <a href="{{url('images/international_area.jpg')}}" target="_blank">
+                                <img src="{{url('images/international_area.jpg')}}" alt="international area" class="img-fluid">
                             </a>
                         </div>
                         <div class="col-md-4">
