@@ -51,13 +51,13 @@
 
                             </p>
                             <p class="pt-3" style="font-size: 1.1rem">
-
+                                <img src="{{url('images/international-area.jpg')}}" alt="international area" class="img-fluid">
                             </p>
                             <p class="pt-3" style="font-size: 1.1rem">
-
+                                <img src="{{url('images/family-area.jpg')}}" alt="family area" class="img-fluid">
                             </p>
                             <p class="pt-3" style="font-size: 1.1rem">
-
+                                <img src="{{url('images/cultural-area.jpg')}}" alt="cultural area" class="img-fluid">
                             </p>
                         </div>
 

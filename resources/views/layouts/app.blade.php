@@ -58,6 +58,9 @@
                         <li class="nav-item hvr-grow badge">
                             <a class="nav-link {{Request::is('about-expo') ? 'active' : ''}}" href="{{url('about-expo')}}">معرفی اکسپو</a>
                         </li>
+{{--                        <li class="nav-item hvr-grow badge">--}}
+{{--                            <a class="nav-link {{Request::is('visit-qatar') ? 'active' : ''}}" href="{{url('visit-qatar')}}">بازدید از قطر</a>--}}
+{{--                        </li>--}}
                         <li class="hvr-grow nav-item dropdown badge">
                             <a class="nav-link dropdown-toggle {{Request::is('conditions*') ? 'active' : ''}}" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 خدمات

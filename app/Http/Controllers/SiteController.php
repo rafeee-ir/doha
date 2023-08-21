@@ -26,6 +26,11 @@ class SiteController extends Controller
 
         return view('about',compact('categoriesInMenus'));
     }
+    public function visitQatar(){
+        $categoriesInMenus = $this->categoriesInMenus();
+
+        return view('visit-qatar',compact('categoriesInMenus'));
+    }
 
     Public function search(){
         // Check for search input
