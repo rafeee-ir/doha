@@ -187,7 +187,7 @@
                         <a class="nav-link {{Request::is('pre-register/shop') ? 'active' : 'text-dark'}}" href="{{url('pre-register/shop')}}">فروش محصول در اکسپو</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {{Request::is('pre-register/visitor') ? 'active' : 'text-dark'}}" href="{{url('pre-register/visitor')}}">شرکت در تور تجاری</a>
+                        <a class="nav-link {{Request::is('visit-qatar') ? 'active' : 'text-dark'}}" href="{{url('visit-qatar')}}">بازدید از قطر</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{Request::is('faq') ? 'active' : 'text-dark'}}" href="{{url('faq')}}">سوالات متداول</a>

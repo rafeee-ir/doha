@@ -79,7 +79,7 @@
 
 
                 <div class="col-md-10">
-                    <img class="img-fluid d-md-block d-none" src="{{url('images/future-img-1.png')}}" alt="" style="border: green solid 1px; border-radius: 30px; width: 100%">
+                    <img class="img-fluid d-md-block d-none" src="{{url('images/future-img.png')}}" alt="" style="border: green solid 1px; border-radius: 30px; width: 100%">
                     <img class="img-fluid d-md-none w-100" src="{{url('images/mobile-mid.jpg')}}" alt="" style="border: green solid 1px; border-radius: 30px;">
 
                 </div>
@@ -89,19 +89,19 @@
                     <div class="row">
                         <div class="col-md-4">
                             <a href="{{url('images/international_area.jpg')}}" target="_blank">
-                                <img src="{{url('images/international_area.jpg')}}" alt="international area" class="img-fluid">
+                                <img src="{{url('images/international_area_t.jpg')}}" alt="international area" class="img-fluid">
                             </a>
                         </div>
                         <div class="col-md-4">
                             <a href="{{url('images/family-area.jpg')}}" target="_blank">
-                            <img src="{{url('images/family-area.jpg')}}" alt="family area" class="img-fluid">
+                            <img src="{{url('images/family-area_t.jpg')}}" alt="family area" class="img-fluid">
                             </a>
 
                         </div>
                         <div class="col-md-4">
                             <a href="{{url('images/cultural-area.jpg')}}" target="_blank">
 
-                            <img src="{{url('images/cultural-area.jpg')}}" alt="cultural area" class="img-fluid">
+                            <img src="{{url('images/cultural-area_t.jpg')}}" alt="cultural area" class="img-fluid">
                             </a>
                         </div>
                     </div>
