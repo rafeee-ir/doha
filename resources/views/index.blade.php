@@ -46,15 +46,16 @@
                             </div>
                         </div>
                     @endforelse
-                <div class="text-center p-5">
-                    <a href="{{url('blog')}}" class="btn btn-secondary btn-sm">مشاهده همه</a>
-                </div>
+
 
 {{--                </div>--}}
 {{----}}
             </div>
-        </div>
 
+        </div>
+        <div class="text-center p-5">
+            <a href="{{url('blog')}}" class="btn btn-secondary btn-sm">مشاهده همه</a>
+        </div>
     </section>
 
 
