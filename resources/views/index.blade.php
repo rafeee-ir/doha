@@ -12,9 +12,9 @@
     </section>
     <section class="container my-5">
         <div class="row bg-light mx-4">
-            <div class="col-12 m-5 d-none d-md-block">
-                <h1 class="text-center">پاویون رسمی جمهوری اسلامی ایران در اکسپو 2023 قطر</h1>
-            </div>
+{{--            <div class="col-12 m-5 d-none d-md-block">--}}
+{{--                <h1 class="text-center">پاویون رسمی جمهوری اسلامی ایران در اکسپو 2023 قطر</h1>--}}
+{{--            </div>--}}
             <div class="col-12">
                 <h2>آخرین اخبار اکسپو 2023</h2>
                 <p class="subheader d-none d-md-block">
@@ -46,6 +46,9 @@
                             </div>
                         </div>
                     @endforelse
+                <div class="text-center p-5">
+                    <a href="{{url('blog')}}" class="btn btn-secondary btn-sm">مشاهده همه</a>
+                </div>
 
 {{--                </div>--}}
 {{----}}
@@ -67,10 +70,10 @@
                 </div>
                 <div class="col-md-7">
                     <p>
-                        در زمان‌های دور سبزکردن بیابان یک چالش بزرگ بود. امروزه سبزکردن بیابان امکان‌پذیر است. برای حل کردن این چالش باید سریعا دست به کار شد چراکه مشکلات جهانی مربوط به آب، انرژی و تهدید غذایی غیرقابل چشم‌پوشی هستند.
+                        «بیابان سبز، محیط زیست بهتر»؛ این شعار نمایشگاه اکسپو 2023 قطر است. در زمان‌های دور سبز کردن بیابان‌ها یک چالش بزرگ بود. امروزه این مهم امری دست‌نیافتنی نیست. اما برای حل کردن این چالش باید به سرعت دست به کار شد. چراکه مشکلات جهانی مربوط به آب، انرژی و تهدید غذایی قابل چشم‌پوشی نیستند.
                     </p>
                     <p class=" d-none d-md-block">
-                        فناوری‌هایی که کاشت پایدار درختان و گیاهان را در سرزمین‌های خشک و بیابانی میسر میکنند اهمیت بسیار زیادی در کاهش مشکلات بیابان‌زایی در سراسر جهان دارند.
+                        در این میان این فناوری‌های کاشت پایدار درختان و گیاهان هستند که سرزمین‌های خشک و بیابانی را به طبیعتی سبز تبدیل می‌کنند. موضوعی که اکسپو قطر 2023 به آن اختصاص دارد.
                     </p>
 
                 </div>
@@ -79,7 +82,7 @@
 
 
                 <div class="col-md-10">
-                    <img class="img-fluid d-md-block d-none" src="{{url('images/future-img.png')}}" alt="" style="border: green solid 1px; border-radius: 30px; width: 100%">
+                    <img class="img-fluid d-md-block d-none" src="{{url('images/future-img.jpg')}}" alt="" style="border: green solid 1px; border-radius: 30px; width: 100%">
                     <img class="img-fluid d-md-none w-100" src="{{url('images/mobile-mid.jpg')}}" alt="" style="border: green solid 1px; border-radius: 30px;">
 
                 </div>
