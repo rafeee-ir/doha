@@ -252,6 +252,10 @@
         <div class="container my-5">
             <img src="{{url('images/title.png')}}" alt="">
         </div>
+        <div class="container py-3 justify-content-end d-flex">
+            @include('social')
+        </div>
+
         <footer class="footer-1">
             <div class="container text-light">
                 <div class="row d-flex justify-content-around">

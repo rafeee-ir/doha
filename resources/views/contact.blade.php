@@ -27,6 +27,9 @@
                                             <br>
                                             <div><span>پست الکترونیک</span></div>
                                             <div><span>info@qatarexpo.ir</span></div>
+                                            <br>
+                                            @include('social')
+
                                         </div>
                                     </div>
                                 </div>
