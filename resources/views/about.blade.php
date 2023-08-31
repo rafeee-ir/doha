@@ -17,8 +17,20 @@
                                 <div class="row my-5">
                                     <div class="col-md-4">
                                         <div class="d-grid gap-2">
-                                            <a class="btn btn-secondary" type="button" href="{{url('storage/downloads/expo/expo2023-overview.pdf')}}" target="_blank">دانلود کاتالوگ توضیحات</a>
+                                            <a class="btn btn-success" type="button" href="{{url('storage/downloads/expo/expo2023-overview.pdf')}}" target="_blank">دانلود کاتالوگ توضیحات</a>
                                             <a class="btn btn-success" type="button" href="{{url('storage/downloads/expo/expo2023-benefits.pdf')}}" target="_blank">دانلود کاتالوگ مزایای اکسپو</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="d-grid gap-2">
+                                            <a class="btn btn-info" type="button" href="{{url('storage/downloads/expo/pavilion-pack.pdf')}}" target="_blank">پکیج غرفه نمایشگاهی در پاویون</a>
+                                            <a class="btn btn-secondary" type="button" href="{{url('storage/downloads/expo/pavilion-pack.pdf')}}" target="_blank">پکیج غرفه فروشگاهی در پاویون</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="d-grid gap-2">
+                                            <a class="btn btn-secondary" type="button" href="{{url('storage/downloads/expo/shop-pack.pdf')}}" target="_blank">پکیج غرفه فروشگاهی در محوطه</a>
+                                            <a class="btn btn-secondary" type="button" href="{{url('storage/downloads/expo/fandb-pack.pdf')}}" target="_blank">پکیج غرفه رستوران</a>
                                         </div>
                                     </div>
                                 </div>
