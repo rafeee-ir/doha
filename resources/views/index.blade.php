@@ -83,8 +83,9 @@
 
 
                 <div class="col-md-10">
-                    <img class="img-fluid d-md-block d-none" src="{{url('images/future-img.jpg')}}" alt="" style="border: green solid 1px; border-radius: 30px; width: 100%">
-                    <img class="img-fluid d-md-none w-100" src="{{url('images/mobile-mid.jpg')}}" alt="" style="border: green solid 1px; border-radius: 30px;">
+                    <div id="85896968823"><script type="text/JavaScript" src="https://www.aparat.com/embed/9ojEy?data[rnddiv]=85896968823&data[responsive]=yes&muted=true&titleShow=true&autoplay=true"></script></div>
+                    {{--                    <img class="img-fluid d-md-block d-none" src="{{url('images/future-img.jpg')}}" alt="" style="border: green solid 1px; border-radius: 30px; width: 100%">--}}
+{{--                    <img class="img-fluid d-md-none w-100" src="{{url('images/mobile-mid.jpg')}}" alt="" style="border: green solid 1px; border-radius: 30px;">--}}
 
                 </div>
                 <div class="col-md-1"></div>
