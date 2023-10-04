@@ -49,29 +49,31 @@
                         <li class="nav-item hvr-grow badge">
                             <a class="nav-link {{Request::is('about') ? 'active' : ''}}" href="{{url('about')}}">پاویون ایران</a>
                         </li>
+
                         <li class="nav-item hvr-grow badge">
                             <a class="nav-link {{Request::is('blog*') ? 'active' : ''}}" href="{{url('blog')}}">اخبار</a>
                         </li>
                         <li class="nav-item hvr-grow badge">
+                            <a class="nav-link {{Request::is('tour') ? 'active' : ''}}" href="{{url('tour')}}">تور بازدید اکسپو</a>
+                        </li>
+                        <li class="nav-item hvr-grow badge">
                             <a class="nav-link {{Request::is('faq') ? 'active' : ''}}" href="{{url('faq')}}">سوالات متداول</a>
                         </li>
-                        <li class="nav-item hvr-grow badge">
-                            <a class="nav-link {{Request::is('about-expo') ? 'active' : ''}}" href="{{url('about-expo')}}">معرفی اکسپو</a>
-                        </li>
-                        <li class="nav-item hvr-grow badge">
-                            <a class="nav-link {{Request::is('visit-qatar') ? 'active' : ''}}" href="{{url('visit-qatar')}}">بازدید از قطر</a>
-                        </li>
-                        <li class="hvr-grow nav-item dropdown badge">
-                            <a class="nav-link dropdown-toggle {{Request::is('conditions*') ? 'active' : ''}}" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                خدمات
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item {{Request::is('pre-register/pavilion') ? 'active' : ''}}" href="{{url('pre-register/pavilion')}}">اجاره غرفه در پاویون</a></li>
-                                <li><a class="dropdown-item {{Request::is('pre-register/shop') ? 'active' : ''}}" href="{{url('pre-register/shop')}}">فروش محصول در اکسپو</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item {{Request::is('pre-register/visitor') ? 'active' : ''}}" href="{{url('pre-register/visitor')}}">شرکت در تور تجاری</a></li>
-                            </ul>
-                        </li>
+{{--                        <li class="nav-item hvr-grow badge">--}}
+{{--                            <a class="nav-link {{Request::is('about-expo') ? 'active' : ''}}" href="{{url('about-expo')}}">معرفی اکسپو</a>--}}
+{{--                        </li>--}}
+
+{{--                        <li class="hvr-grow nav-item dropdown badge">--}}
+{{--                            <a class="nav-link dropdown-toggle {{Request::is('conditions*') ? 'active' : ''}}" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
+{{--                                خدمات--}}
+{{--                            </a>--}}
+{{--                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">--}}
+{{--                                <li><a class="dropdown-item {{Request::is('pre-register/pavilion') ? 'active' : ''}}" href="{{url('pre-register/pavilion')}}">اجاره غرفه در پاویون</a></li>--}}
+{{--                                <li><a class="dropdown-item {{Request::is('pre-register/shop') ? 'active' : ''}}" href="{{url('pre-register/shop')}}">فروش محصول در اکسپو</a></li>--}}
+{{--                                <li><hr class="dropdown-divider"></li>--}}
+{{--                                <li><a class="dropdown-item {{Request::is('pre-register/visitor') ? 'active' : ''}}" href="{{url('pre-register/visitor')}}">شرکت در تور تجاری</a></li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
 
                         <li class="hvr-grow nav-item badge">
                             <a class="nav-link {{Request::is('contact') ? 'active' : ''}}" href="{{url('contact')}}">تماس با ما</a>
@@ -180,21 +182,22 @@
                     <li class="nav-item">
                         <a class="nav-link {{Request::is('blog*') ? 'active' : 'text-dark'}}" href="{{url('blog')}}">اخبار</a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link {{Request::is('pre-register/pavilion') ? 'active' : 'text-dark'}}" href="{{url('pre-register/pavilion')}}">اجاره غرفه در پاویون</a>
+                        <a class="nav-link {{Request::is('tour') ? 'active' : 'text-dark'}}" href="{{url('tour')}}">تور بازدید اکسپو</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{Request::is('pre-register/shop') ? 'active' : 'text-dark'}}" href="{{url('pre-register/shop')}}">فروش محصول در اکسپو</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{Request::is('visit-qatar') ? 'active' : 'text-dark'}}" href="{{url('visit-qatar')}}">بازدید از قطر</a>
-                    </li>
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link {{Request::is('pre-register/pavilion') ? 'active' : 'text-dark'}}" href="{{url('pre-register/pavilion')}}">اجاره غرفه در پاویون</a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link {{Request::is('pre-register/shop') ? 'active' : 'text-dark'}}" href="{{url('pre-register/shop')}}">فروش محصول در اکسپو</a>--}}
+{{--                    </li>--}}
                     <li class="nav-item">
                         <a class="nav-link {{Request::is('faq') ? 'active' : 'text-dark'}}" href="{{url('faq')}}">سوالات متداول</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link {{Request::is('about-expo') ? 'active' : 'text-dark'}}" href="{{url('about-expo')}}">معرفی اکسپو</a>
-                    </li>
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link {{Request::is('about-expo') ? 'active' : 'text-dark'}}" href="{{url('about-expo')}}">معرفی اکسپو</a>--}}
+{{--                    </li>--}}
                     <li class="nav-item">
                         <a class="nav-link {{Request::is('contact') ? 'active' : 'text-dark'}}" href="{{url('contact')}}">تماس با ما</a>
                     </li>

@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container-fluid">
+    <div class="container-fluid justify-content-center text-center" style="background-color: #390128">
         <img class="img-fluid d-none d-md-block" src="{{url('images/banner3.jpg')}}" alt="{{ config('app.name') }}">
         <img class="img-fluid d-md-none w-100" src="{{url('images/mobile-top.jpg')}}" alt="{{ config('app.name') }}">
     </div>

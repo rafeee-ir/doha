@@ -58,7 +58,14 @@
                                     <a href="{{url('contact')}}" class="btn btn-lg btn-dark">تماس با ما</a>
                                 </div>
                             <div class="text-center mt-5 pt-5" id="mojavez">
-                                <img src="{{url('images/mojavez.jpg')}}" title="مجوز برگزاری نمایشگاه" class="img-fluid">
+                                <a href="{{url('images/ls.jpg')}}" target="_blank">
+                                    <img src="{{url('images/ls.jpg')}}" title="پلان نمایشگاه" class="img-fluid">
+                                </a>
+                            </div>
+                            <div class="text-center mt-5 pt-5" id="mojavez">
+                                <a href="{{url('images/mojavez.jpg')}}" target="_blank">
+                                    <img src="{{url('images/mojavez.jpg')}}" title="مجوز برگزاری نمایشگاه" class="img-fluid">
+                                </a>
                             </div>
                         </div>
                     </div>

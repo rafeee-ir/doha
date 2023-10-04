@@ -40,7 +40,13 @@ Route::get('/search',[SiteController::class,'search'])->name('search');
 Auth::routes();
 
 Route::get('/about', [SiteController::class, 'about'])->name('about.index');
-Route::get('/visit-qatar', [SiteController::class, 'visitQatar'])->name('visitQatar.index');
+
+
+Route::get('/visit-qatar',
+    function(){
+        return redirect('/tour');
+    });
+Route::get('/tour', [SiteController::class, 'visitQatar'])->name('visitQatar.index');
 
 Route::resource('per-registers',PreRegisterController::class);
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
