@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Post;
 use App\Models\Product;
+use App\Models\Supplier;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -13,10 +14,11 @@ class SiteController extends Controller
     public function homepage(){
 //        $set = $this->setting();
         $posts = Post::latest()->take(3)->get();
+        $brands = Supplier::latest()->take(4)->get();
 //        $products = Product::where('published',true)->latest()->take(4)->get();
 //        $products_count = Product::all()->where('published',true)->count();
 //        $categoriesInMenus = $this->categoriesInMenus();
-        return view('index', compact('posts'));
+        return view('index', compact('posts','brands'));
 //            compact('posts',
 //                'products_count','products','set','categoriesInMenus'));
     }

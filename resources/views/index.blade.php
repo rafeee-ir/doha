@@ -128,7 +128,22 @@
                 </p>
             </div>
             <div class="col-12">
-               <p class="text-center">جای شما اینجا خالیست</p>
+                <div class="row">
+                @forelse($brands as $item)
+               <div class="col-md-3">
+                   <a href="{{url('brands/'.$item->slug)}}" class="text-decoration-none">
+                   <div class="card border-0" style="width: 18rem;">
+                       <img src="{{url('public/storage/uploads/brands/'.$item->logo)}}" class="card-img-top" alt="{{$item->title}}">
+                       <div class="card-body">
+                           <h5 class="card-title">{{$item->title}}</h5>
+                           <p class="card-text">{{Str::limit($item->about,70)}}</p>
+                       </div>
+                   </div>
+                   </a>
+               </div>
+                @empty
+                @endforelse
+                </div>
             </div>
         </div>
 
