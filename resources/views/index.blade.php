@@ -133,7 +133,7 @@
                <div class="col-md-3">
                    <a href="{{url('brands/'.$item->slug)}}" class="text-decoration-none">
                    <div class="card border-0" style="width: 18rem;">
-                       <img src="{{url('public/storage/uploads/brands/'.$item->logo)}}" class="card-img-top" alt="{{$item->title}}">
+                       <img src="{{url('storage/uploads/suppliers/'.$item->logo)}}" class="card-img-top" alt="{{$item->title}}">
                        <div class="card-body">
                            <h5 class="card-title">{{$item->title}}</h5>
                            <p class="card-text">{{Str::limit($item->about,70)}}</p>
