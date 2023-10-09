@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','About us')
+@section('title','معرفی اکسپو')
 @section('content')
     <!-- Start Contact -->
     <section id="contact-us" class="contact-us section mt-5">

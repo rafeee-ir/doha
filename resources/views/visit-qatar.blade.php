@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','About us')
+@section('title','تور تجاری اکسپو قطر')
 @section('content')
     <!-- Start Contact -->
     <section id="contact-us" class="contact-us section mt-5">
@@ -38,7 +38,7 @@
 
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <a href="{{url('storage/downloads/expo/tour.pdf')}}" class="btn btn-success">دریافت پکیج تور PDF</a>
+                                    <a href="{{url('storage/downloads/expo/tour.pdf')}}" target="_blank" class="btn btn-success">دریافت پکیج تور PDF</a>
                                     <p class="pt-3" style="font-size: 1.1rem">
                                         پاویون جمهوری اسلامی ایران در طول برگزاری اکسپو قطر میزبان شما بازدیدکنندگان بصورت هیئت های تجاری خواهد بود. در این اکسپو به مدت شش ماه در قلب دوحه در جریان است، بیش از هشتاد کشور حضور داشته و تکنولوژی های خود را در زمینه کشاورزی مدرن و باغبانی به نمایش گذاشته اند.
                                     </p>
@@ -64,22 +64,33 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header" id="headingOne">
                                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                        آژانس گردشگری هفت اقلیم
+                                                        شرکت خدمات مسافرتی و گردشگری هفت اقلیم
                                                     </button>
                                                 </h2>
                                                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#agencies">
                                                     <div class="accordion-body">
-                                                        شرکت هفت اقلیم
-                                                        <br>
-                                                        شماره تماس:
-                                                        <a href="tel=+989370161675">
-                                                        09370161675
-                                                        </a>
-                                                        <br>
-                                                        وبسایت:
-                                                        <a href="https://haft724.ir">
-                                                            haft724.ir
-                                                        </a>
+                                                        <div class="row align-content-center justify-content-center align-items-center">
+                                                            <div class="col-md-2">
+                                                                <img src="https://haft724.ir/wp-content/uploads/2021/06/logo.jpg" class="img-fluid" alt="شرکت خدمات مسافرتی و گردشگری هفت اقلیم">
+                                                            </div>
+                                                            <div class="col-md-10">
+                                                                <h4>
+                                                                    شرکت خدمات مسافرتی و گردشگری هفت اقلیم
+                                                                </h4>
+                                                                <h5>
+                                                                    شماره تماس:
+                                                                    <a href="tel=+989102229694">
+                                                                        09102229694
+                                                                    </a>
+                                                                </h5>
+                                                                <h6>
+                                                                    وبسایت:
+                                                                    <a href="https://haft724.ir">
+                                                                        haft724.ir
+                                                                    </a>
+                                                                </h6>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

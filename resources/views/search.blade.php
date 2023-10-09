@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Search ' . request()->s ?? '')
+@section('title','جستجو ' . request()->s ?? '')
 
 @section('content')
 

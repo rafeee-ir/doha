@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title','Contact us')
+@section('title','تماس با ما')
 @section('content')
 
     <section id="contact-us" class="contact-us section mt-5">
