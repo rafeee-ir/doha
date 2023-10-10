@@ -130,7 +130,7 @@
             <div class="col-12">
                 <div class="row">
                 @forelse($brands as $item)
-               <div class="col-md-3">
+               <div class="col-md-2">
 {{--                   <a href="{{url('brands/'.$item->slug)}}" class="text-decoration-none">--}}
 {{--                   <div class="card border-0">--}}
                        <img src="{{url('storage/uploads/suppliers/'.$item->logo)}}" class="img-fluid brand-img" alt="{{$item->title}}" title="{{$item->title}}">
