@@ -130,10 +130,10 @@
             <div class="col-12">
                 <div class="row">
                 @forelse($brands as $item)
-               <div class="col-md-2">
+               <div class="col-md-3">
 {{--                   <a href="{{url('brands/'.$item->slug)}}" class="text-decoration-none">--}}
                    <div class="card border-0" style="width: 18rem;">
-                       <img src="{{url('storage/uploads/suppliers/'.$item->logo)}}" class="card-img-top brand-img" alt="{{$item->title}}">
+                       <img src="{{url('storage/uploads/suppliers/'.$item->logo)}}" class="img-fluid brand-img" alt="{{$item->title}}">
                        <div class="card-body">
                            <h5 class="card-title text-center">{{$item->title}}</h5>
 {{--                           <p class="card-text">{{Str::limit($item->about,70)}}</p>--}}

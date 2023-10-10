@@ -14,7 +14,7 @@ class SiteController extends Controller
     public function homepage(){
 //        $set = $this->setting();
         $posts = Post::latest()->take(3)->get();
-        $brands = Supplier::latest()->take(4)->get();
+        $brands = Supplier::latest()->take(8)->get();
 //        $products = Product::where('published',true)->latest()->take(4)->get();
 //        $products_count = Product::all()->where('published',true)->count();
 //        $categoriesInMenus = $this->categoriesInMenus();
