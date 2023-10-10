@@ -3,8 +3,8 @@
 @section('content')
 
     <div class="container-fluid justify-content-center text-center" style="background-color: #390128">
-        <img class="img-fluid d-none d-md-block" src="{{url('images/banner3.jpg')}}" alt="{{ config('app.name') }}">
-        <img class="img-fluid d-md-none w-100" src="{{url('images/mobile-top.jpg')}}" alt="{{ config('app.name') }}">
+{{--        <img class="img-fluid d-none d-md-block" src="{{url('images/banner3.jpg')}}" alt="{{ config('app.name') }}">--}}
+{{--        <img class="img-fluid d-md-none w-100" src="{{url('images/mobile-top.jpg')}}" alt="{{ config('app.name') }}">--}}
     </div>
 
     <section class="container my-5">
@@ -130,16 +130,16 @@
             <div class="col-12">
                 <div class="row">
                 @forelse($brands as $item)
-               <div class="col-md-3">
-                   <a href="{{url('brands/'.$item->slug)}}" class="text-decoration-none">
+               <div class="col-md-2">
+{{--                   <a href="{{url('brands/'.$item->slug)}}" class="text-decoration-none">--}}
                    <div class="card border-0" style="width: 18rem;">
-                       <img src="{{url('storage/uploads/suppliers/'.$item->logo)}}" class="card-img-top" alt="{{$item->title}}">
+                       <img src="{{url('storage/uploads/suppliers/'.$item->logo)}}" class="card-img-top brand-img" alt="{{$item->title}}">
                        <div class="card-body">
-                           <h5 class="card-title">{{$item->title}}</h5>
-                           <p class="card-text">{{Str::limit($item->about,70)}}</p>
+                           <h5 class="card-title text-center">{{$item->title}}</h5>
+{{--                           <p class="card-text">{{Str::limit($item->about,70)}}</p>--}}
                        </div>
                    </div>
-                   </a>
+{{--                   </a>--}}
                </div>
                 @empty
                 @endforelse
@@ -168,6 +168,19 @@
 @endsection
 @section('style')
 {{--    <link rel="stylesheet" href="css/owl.carousel.min.css">--}}
+    <style>
+        .brand-img {
+            filter: gray; /* IE6-9 */
+            -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+            filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+        }
+
+        /* Disable grayscale on hover */
+        .brand-img:hover {
+            -webkit-filter: grayscale(0);
+            filter: none;
+        }
+    </style>
 @endsection
 @section('script')
 {{--    <script src="js/owl.carousel.min.js"></script>--}}

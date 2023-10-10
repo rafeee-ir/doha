@@ -54,11 +54,11 @@ Route::post('/contact', [ContactController::class, 'store'])->name('contact.stor
 
 Route::post('/newsletter', [NewsletterController::class, 'store'])->name('newsletter.store');
 
-Route::get('products',[ProductController::class,'index'])->name('products.index');
-Route::get('products/{product}',[ProductController::class,'show'])->name('products.show');
+//Route::get('products',[ProductController::class,'index'])->name('products.index');
+//Route::get('products/{product}',[ProductController::class,'show'])->name('products.show');
 
-Route::get('brands',[SupplierController::class,'index'])->name('suppliers.index');
-Route::get('brands/{product}',[SupplierController::class,'show'])->name('suppliers.show');
+//Route::get('brands',[SupplierController::class,'index'])->name('suppliers.index');
+//Route::get('brands/{product}',[SupplierController::class,'show'])->name('suppliers.show');
 
 Route::get('blog',[PostController::class,'index'])->name('blog.index');
 Route::get('blog/{post}',[PostController::class,'show'])->name('blog.show');
