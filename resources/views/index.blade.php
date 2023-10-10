@@ -132,13 +132,13 @@
                 @forelse($brands as $item)
                <div class="col-md-3">
 {{--                   <a href="{{url('brands/'.$item->slug)}}" class="text-decoration-none">--}}
-                   <div class="card border-0" style="width: 18rem;">
-                       <img src="{{url('storage/uploads/suppliers/'.$item->logo)}}" class="img-fluid brand-img" alt="{{$item->title}}">
-                       <div class="card-body">
-                           <h5 class="card-title text-center">{{$item->title}}</h5>
+{{--                   <div class="card border-0">--}}
+                       <img src="{{url('storage/uploads/suppliers/'.$item->logo)}}" class="img-fluid brand-img" alt="{{$item->title}}" title="{{$item->title}}">
+{{--                       <div class="card-body">--}}
+{{--                           <h5 class="card-title text-center">{{$item->title}}</h5>--}}
 {{--                           <p class="card-text">{{Str::limit($item->about,70)}}</p>--}}
-                       </div>
-                   </div>
+{{--                       </div>--}}
+{{--                   </div>--}}
 {{--                   </a>--}}
                </div>
                 @empty
