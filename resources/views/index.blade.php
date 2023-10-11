@@ -150,21 +150,21 @@
         </div>
 
     </section>
-    <section class="container-fluid my-5 bg-light py-5">
+{{--    <section class="container-fluid my-5 bg-light py-5">--}}
 
-        <div class="container">
-        <div class="row mx-4">
-            <div class="col-12">
-                <h2>محصولات عرضه شده ایران در اکسپو 2023 قطر</h2>
-                <p class="subheader  d-none d-md-block">
-                    محصولاتی که در اکسپو 2023 قطر در پاویون جمهوری اسلامی ایران عرضه شده است
-                </p>
-            </div>
-        </div>
+{{--        <div class="container">--}}
+{{--        <div class="row mx-4">--}}
+{{--            <div class="col-12">--}}
+{{--                <h2>محصولات عرضه شده ایران در اکسپو 2023 قطر</h2>--}}
+{{--                <p class="subheader  d-none d-md-block">--}}
+{{--                    محصولاتی که در اکسپو 2023 قطر در پاویون جمهوری اسلامی ایران عرضه شده است--}}
+{{--                </p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 
-        </div>
+{{--        </div>--}}
 
-    </section>
+{{--    </section>--}}
 @endsection
 @section('style')
 {{--    <link rel="stylesheet" href="css/owl.carousel.min.css">--}}
