@@ -18,13 +18,13 @@
 
                     <div class="row mb-4">
                     <div class="col-lg-6">
-                        <a target="_blank" href="{{url('images/tour1.jpg')}}">
-                            <img src="{{url('images/tour2.png')}}" alt="تور بازدید اکسپو" class="img-fluid">
+                        <a target="_blank" href="{{url('images/tour01.jpg')}}">
+                            <img src="{{url('images/tour01.jpg')}}" alt="تور بازدید اکسپو" class="img-fluid">
                         </a>
                     </div>
                     <div class="col-lg-6">
-                        <a target="_blank" href="{{url('images/tour2.jpg')}}">
-                            <img src="{{url('images/tour1.png')}}" alt="شرابط تور بازدید اکسپو" class="img-fluid">
+                        <a target="_blank" href="{{url('images/tour02.jpg')}}">
+                            <img src="{{url('images/tour02.jpg')}}" alt="شرابط تور بازدید اکسپو" class="img-fluid">
                         </a>
                     </div>
                 </div>
